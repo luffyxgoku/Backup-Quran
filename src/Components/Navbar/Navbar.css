@@ -1,0 +1,30 @@
+.nav-container {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  background-color: white;
+}
+
+.nav-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+.nav-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+}
+.menu-name {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}

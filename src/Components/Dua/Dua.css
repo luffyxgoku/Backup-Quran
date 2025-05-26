@@ -1,0 +1,146 @@
+.heading-dua-text,
+.subheading-dua-text,
+.dua-header-text,
+.main-dua-text,
+.dua-reference-text,
+.dua-transliteration,
+.dua-translation,
+.dua-title-heading-text {
+  padding: 0;
+  margin: 0;
+}
+.heading-dua-text,
+.dua-header-text {
+  font-size: 1.5rem;
+  color: rgba(120, 85, 70, 255);
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.subheading-dua-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.subheading-dua-text {
+  font-size: 0.9rem;
+  color: gray;
+}
+.dua-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  object-fit: contain;
+}
+.dropdown-container {
+  text-align: right;
+}
+.mood-need-dropdown {
+  width: 8rem;
+  height: 2rem;
+  outline: none;
+  border-radius: 0.3rem;
+  margin: 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 0.5px solid black;
+}
+.select-options {
+  font-size: 0.7rem;
+}
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
+  margin-bottom: 4.5rem;
+}
+
+.mood-button-active {
+  height: 2.2rem;
+  border: 0.5px solid black;
+  font-size: 0.9rem;
+  background-color: rgba(120, 85, 70, 255);
+  color: white;
+  border-radius: 0.4rem;
+}
+
+.mood-button {
+  height: 2.2rem;
+  border: 0.5px solid black;
+  font-size: 0.9rem;
+  background-color: transparent;
+  border-radius: 0.4rem;
+}
+.whole-mood-container {
+  margin-bottom: 4.5rem;
+}
+.moodial-dua-contianer {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.dua-container-texts {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+}
+.main-dua-text {
+  font-family: "Amiri Quran";
+  text-align: right;
+  font-size: 1.4rem;
+  line-height: 1.9;
+}
+.dua-reference-text {
+  text-align: right;
+  font-size: 0.8rem;
+  margin-top: 0.9rem;
+  color: gray;
+  padding-right: 0.4rem;
+  padding-left: 0.4rem;
+  box-sizing: border-box;
+}
+.dua-reference-text-unique {
+  text-align: right;
+  font-size: 0.8rem;
+  margin-top: 0.9rem;
+  color: gray;
+  padding-right: 0.4rem;
+  padding-left: 0.4rem;
+  box-sizing: border-box;
+}
+.dua-transliteration {
+  text-align: center;
+  font-family: "Nunito NormalItalic";
+  font-size: 1.16rem;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+.dua-translation {
+  background-color: rgba(253, 243, 232, 255);
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+}
+.general-duas-container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 4.5rem;
+}
+.general-dua-content {
+  margin-bottom: 1rem;
+}
+.dua-title-heading {
+  border-radius: 0.4rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 0.5rem;
+  background-color: rgba(253, 243, 232, 255);
+}

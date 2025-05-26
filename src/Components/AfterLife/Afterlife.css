@@ -1,0 +1,55 @@
+.afterlife-title,
+.afterlife-description {
+  padding: 0;
+  margin: 0;
+}
+
+.afterlife-img-right {
+  height: 4rem;
+  width: 4rem;
+  object-fit: contain;
+}
+.afterlife-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem 0.5rem;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+  /* background-color: rgba(120, 85, 70, 255); */
+  background-color: rgba(253, 243, 232, 255);
+}
+.afterlife-title {
+  font-size: 1.19rem;
+  color: black;
+}
+.afterlife-description {
+  font-size: 0.9rem;
+  color: black;
+}
+.afterlife-banner {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+.perticular-afterlife {
+  margin-bottom: 4.5rem;
+}
+.afterlife-info {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.bismillah-container-new {
+  width: 100%;
+  height: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.bismillah-new {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}

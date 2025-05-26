@@ -1,0 +1,88 @@
+.main-home-container {
+  margin-bottom: 4rem;
+}
+.essence-text,
+.piller-title,
+.essense-subheading,
+.piller-banner-heading,
+.piller-banner-subheading {
+  padding: 0;
+  margin: 0;
+}
+.essence-text {
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+.afterlife-margin {
+  margin-top: 1.5rem;
+}
+.essense-subheading {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  color: gray;
+  margin-bottom: 1rem;
+}
+.pillers-container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5rem;
+}
+.piller-contents {
+  background-color: rgba(253, 243, 232, 255);
+  width: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+}
+.piller-title {
+  font-size: 0.9rem;
+}
+.piller-icon {
+  height: 2rem;
+  width: 2rem;
+  object-fit: contain;
+}
+
+.right-banner-piller-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: black;
+  color: white;
+}
+
+.piller-banner-heading {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner-piller-img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+}
+.unique {
+  margin-top: 1rem;
+}
+.perticular-piller-container {
+  /* margin-top: 1rem; */
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 4.5rem;
+}

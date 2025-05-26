@@ -1,0 +1,40 @@
+.main-logo-container {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: flex;
+  gap: 0.4rem;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 4rem;
+  /* background-color: rgba(253, 243, 232, 255); */
+  background-color: white;
+  border-radius: 2rem;
+}
+.logo-title-text {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: black;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-left: 0.5rem;
+}
+.main-logo-app,
+.main-logo-sidebar {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  /* border: 1px solid red; */
+}
+.main-logo-app {
+  margin-left: 0.5rem;
+}
+.main-logo-sidebar {
+  margin-right: 0.5rem;
+}

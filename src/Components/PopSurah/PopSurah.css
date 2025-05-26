@@ -1,0 +1,73 @@
+.ps-textarab,
+.ps-name,
+.ps-ayahs,
+.ps-fazilat,
+.ps-ref,
+.ps-eachayah {
+  margin: 0;
+  padding: 0;
+}
+.ps-c {
+  margin-bottom: 4.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.ps-single-c {
+  background-color: rgba(253, 243, 232, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.ps-surahName {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.ps-name-ayah-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.ps-name {
+  font-size: 1.1rem;
+  color: rgb(191, 163, 20);
+}
+.ps-ayahs {
+  font-size: 1.1rem;
+  color: rgb(191, 163, 20);
+}
+.ps-textarab {
+  text-align: right;
+  font-family: "Amiri Quran";
+  font-size: 1.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.5px solid black;
+}
+.single-surah {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.ps-fazilat {
+  font-size: 0.9rem;
+  text-align: left;
+}
+.ps-ref {
+  font-size: 0.8rem;
+  color: gray;
+  text-align: right;
+}
+
+.ps-eachayah {
+  font-size: 0.7rem;
+}

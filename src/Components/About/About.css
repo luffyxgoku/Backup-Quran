@@ -1,0 +1,101 @@
+.about-title,
+.about-text,
+.about-heading,
+.feature-title,
+.feature-text,
+.about-list,
+.about-list-item,
+.feature-list,
+.about-feature,
+.about-text-dev,
+.about-text-bio {
+  padding: 0;
+  margin: 0;
+}
+.about-bg-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  background-color: black;
+  z-index: -100;
+}
+.about-bg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* .about-cont {
+  background-image: url("../../assets/footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+} */
+.about-sec-cont {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 4.5rem;
+  color: rgb(200, 199, 199);
+}
+.about-block {
+  margin-bottom: 1rem;
+}
+
+.about-heading {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  color: rgba(253, 243, 232, 255);
+}
+.about-title-main {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: rgb(191, 163, 20);
+}
+.about-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  margin-top: 1rem;
+  color: rgba(253, 243, 232, 255);
+}
+
+.about-text-dev {
+  font-size: 1rem;
+  color: rgb(191, 163, 20);
+  margin-bottom: 0.2rem;
+}
+.about-text {
+  font-size: 0.9rem;
+}
+.about-text-bio {
+  font-size: 0.9rem;
+  color: rgb(200, 199, 199);
+}
+.about-feature {
+  margin-top: 0.2rem;
+}
+.feature-list {
+  padding-left: 1.5rem;
+}
+.feature-title {
+  font-size: 1rem;
+  color: rgb(255, 229, 176);
+}
+
+.feature-text {
+  font-size: 0.9rem;
+}
+
+.about-list {
+  padding-left: 1.5rem;
+  margin-top: 0.2rem;
+}
+
+.about-list-item {
+  font-size: 0.9rem;
+}

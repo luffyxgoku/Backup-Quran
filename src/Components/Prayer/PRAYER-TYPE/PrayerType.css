@@ -1,0 +1,231 @@
+.prayertime-time,
+.prayertime-title,
+.rakats,
+.prayer-title-timing,
+.concers-subheading,
+.prayer-concern-points {
+  padding: 0;
+  margin: 0;
+}
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.prayer-icon {
+  height: 1.4rem;
+  width: 1.4rem;
+  object-fit: contain;
+}
+.singleprayertime-container {
+  margin-bottom: 5rem;
+}
+.prayer-title-timing {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.single-prayertime-container {
+  /* border: 1px solid black; */
+  background-color: rgba(253, 243, 232, 255);
+  border-radius: 0.3rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 0.3rem;
+  padding-right: 0.5rem;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+.prayertime-left {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.icon-container {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prayertime-img {
+  height: 80%;
+  width: 80%;
+  object-fit: contain;
+}
+.column1 {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  /* gap: 0.5rem; */
+  /* border: 2px solid green; */
+}
+.rakats {
+  color: gray;
+  font-size: 0.9rem;
+}
+.prayertime-title {
+  font-size: 1.1rem;
+  /* font-weight: bold; */
+}
+
+.prayertime-time {
+  margin-left: 0.8rem;
+}
+.kailmas-title,
+.kalima-arabic,
+.kalima-translit,
+.kalima-translation,
+.kalima-name,
+.purifcation-title,
+.purify-step,
+.purify-ref,
+.purify-desc {
+  padding: 0;
+  margin: 0;
+}
+.kalimas {
+  margin-bottom: 4.8rem;
+}
+.single-kalima-container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  /* border: 2px solid black; */
+}
+.kalima-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(120, 85, 70, 255);
+  color: white;
+  height: 3.2rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+.kailmas-title {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.kalima-arabic {
+  text-align: right;
+  font-family: "Amiri Quran";
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+.kalima-translit {
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: "Nunito NormalItalic";
+  margin-bottom: 0.6rem;
+}
+.kalima-translation {
+  background-color: rgba(253, 243, 232, 255);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.5rem;
+}
+.purification-container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.purifcation-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  height: 3rem;
+  background-color: rgba(253, 243, 232, 255);
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  box-sizing: border-box;
+}
+.purifcation-title {
+  font-size: 0.9rem;
+}
+.below-icon {
+  height: 0.8rem;
+  width: 0.8rem;
+  object-fit: contain;
+}
+.side-icon {
+  height: 0.8rem;
+  width: 0.8rem;
+  object-fit: contain;
+  transform: rotate(90deg);
+}
+.purify-tilte {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+.purify-container {
+  /* border: 1px solid green; */
+
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 4.5rem;
+}
+
+.purify-single-container {
+  /* border: 2px solid red; */
+  margin-top: 1rem;
+}
+.purify-step {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  background-color: rgba(120, 85, 70, 255);
+  color: white;
+  text-align: center;
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.2rem;
+}
+.purify-desc {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+.purify-ref {
+  color: grey;
+  text-align: right;
+  font-size: 0.8rem;
+}
+.concerned-points-last-container {
+  margin-top: 0.5rem;
+  margin-bottom: 5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.concerned-points-container {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+.concers-subheading {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.prayer-concern-points {
+  margin-bottom: 0.5rem;
+}
+.different-prayer-container {
+  margin-bottom: 5rem;
+}

@@ -1,0 +1,73 @@
+.explore-container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.explore-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.explore-text {
+  font-size: 1.3rem;
+}
+.show-all-text {
+  font-size: 0.9rem;
+}
+.worship-text {
+  color: gray;
+}
+.worship-text,
+.explore-text,
+.show-all-text,
+.reuse-main-text,
+.reuse-sub-text {
+  padding: 0;
+  margin: 0;
+}
+.card-container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+.reuse-container {
+  width: 45%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  /* background-color: white; */
+  border-radius: 0.5rem;
+  background-color: rgba(253, 243, 232, 255);
+}
+.reuse-img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+}
+.reuse-left {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+.reuse-right {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reuse-sub-text {
+  font-size: 0.9rem;
+}
+.reuse-main-text {
+  font-size: 1rem;
+}

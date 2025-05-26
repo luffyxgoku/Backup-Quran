@@ -1,0 +1,89 @@
+.hero-container {
+  width: 100vw;
+  height: 15rem;
+  position: relative;
+  z-index: -1;
+}
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-img {
+  height: 1.5rem;
+  width: 1.5rem;
+  object-fit: contain;
+}
+.location-container {
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: flex-start;
+}
+.location-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  object-fit: contain;
+}
+.locate {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.location,
+.city-country,
+.time-displayer,
+.time-name,
+.upcoming-prayer-time,
+.upcoming-prayer,
+.time-left,
+.azan-btn {
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
+.main-time-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.time-displayer {
+  font-family: "Nunito Bold";
+  font-size: 2.2rem;
+}
+.time-name {
+  font-size: 1.1rem;
+  color: white;
+  /* Added this [margin-top] line to remove margin */
+  margin-top: -0.4rem;
+}
+.prayer-time-name {
+  color: rgb(243, 199, 2);
+  font-size: 1.1rem;
+}
+.upcoming-prayer-time-container {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+}
+.specifir-prayer-name {
+  color: rgb(243, 199, 2);
+  font-size: 1rem;
+}
+.time-left-container {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}

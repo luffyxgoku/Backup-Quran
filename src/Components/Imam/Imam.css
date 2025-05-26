@@ -1,0 +1,39 @@
+.imam.des,
+.imam-info,
+.imam-name {
+  margin: 0;
+  padding: 0;
+}
+
+.imam-data-c {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 4.5rem;
+}
+
+.imam-info {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.imam-name {
+  text-align: center;
+  height: 1.8rem;
+  font-size: 1.3rem;
+  background-color: rgba(253, 243, 232, 255);
+}
+.imam-des {
+  font-size: 0.9rem;
+}
+
+.imam-main-heading {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  color: rgb(191, 163, 20);
+  /* border: 1px solid red; */
+}

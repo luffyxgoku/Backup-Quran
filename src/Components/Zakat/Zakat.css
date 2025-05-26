@@ -1,0 +1,111 @@
+.price-item,
+.zakat-due,
+.zakat-not-eligible {
+  padding: 0;
+  margin: 0;
+}
+
+.zakat-calculator-container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 5rem;
+  /* border: 2px solid red; */
+}
+
+.zakat-calculator-title {
+  font-size: 1.3rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.zakat-price-info {
+  margin-bottom: 1.5rem;
+}
+
+.price-item {
+  margin-bottom: 0.4rem;
+}
+
+.zakat-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.zakat-input-group {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+/* .zakat-input-group input {
+  padding: 0.4rem;
+  margin-top: 0.2rem;
+  font-size: 1rem;
+} */
+
+.zakat-input {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: 1px solid black;
+  padding: 0.4rem;
+  margin-top: 0.2rem;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  border-radius: 0.3rem;
+}
+
+.zakat-submit-button {
+  padding: 0.6rem;
+  background-color: rgba(120, 85, 70, 255);
+
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.zakat-result {
+  margin-top: 1.5rem;
+}
+
+.zakat-due {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: green;
+}
+
+.zakat-not-eligible {
+  color: red;
+}
+
+.loading-message {
+  text-align: center;
+  font-style: italic;
+}
+.fallback-ui {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #856404;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fallback-title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.fallback-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}

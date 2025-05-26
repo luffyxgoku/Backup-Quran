@@ -1,0 +1,112 @@
+.prophets-names,
+.stories-title,
+.prophetstories-text,
+.prophetstories-title,
+.story-title,
+.prophet-reference-text {
+  margin: 0;
+  padding: 0;
+}
+.parent-prophet-cont {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 4.5rem;
+}
+.stories-container {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 4.5rem;
+}
+.stories-title {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.prophets-cont {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.single-prophet-cont {
+  background-color: rgba(253, 243, 232, 255);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 49%;
+  height: 4rem;
+  margin-bottom: 0.6rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  box-sizing: border-box;
+}
+
+.prophets-images {
+  height: 3rem;
+  width: 3rem;
+  object-fit: contain;
+}
+.stories-search-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.stories-search-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+}
+.prophet-stories-img {
+  width: 100%;
+  height: 10rem;
+}
+
+.prophetstories-banner-container {
+  margin-bottom: 1rem;
+  height: 10rem;
+}
+.prophetstories-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.4rem;
+}
+.prophetstories-title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.prophetstories-text {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+.prophet-reference-text {
+  font-style: italic;
+  color: rgb(191, 163, 20);
+  border-top: 1px dashed rgb(191, 163, 20);
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.prophet-story-list {
+  background-color: rgba(253, 243, 232, 255);
+  border-radius: 0.4rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+.story-title {
+  font-size: 1.1rem;
+}
+.load-animation-unique {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,87 @@
+.prayer-gender,
+.prayer-visual-text,
+.prayer-info-text {
+  padding: 0;
+  margin: 0;
+}
+
+.prayer-container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 4.5rem;
+}
+
+.prayer-visual-text {
+  /* font-size: 1.2rem;
+  margin: 0.8rem 0rem;
+  text-align: center; */
+
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: rgb(191, 163, 20);
+}
+
+.prayer-visual-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.prayer-visual {
+  width: 45%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  align-items: center;
+}
+.prayer-salah-img {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.prayer-info-container {
+  margin-top: 1.2rem;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  /* margin-bottom: 4.5rem; */
+}
+.prayer-info {
+  /* margin-left: 1.5rem;
+  margin-right: 1.5rem; */
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  /* background-color: rgb(243, 243, 243); */
+  background-color: rgba(253, 243, 232, 255);
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.prayer-info-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  object-fit: contain;
+}
+.move-icon {
+  height: 30%;
+  width: 2rem;
+  object-fit: contain;
+}
+.prayer-info-text {
+  font-size: 0.9rem;
+  text-align: left;
+}
+.left-info-container {
+  margin-left: 0.7rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
