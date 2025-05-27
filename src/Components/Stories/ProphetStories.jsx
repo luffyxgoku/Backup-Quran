@@ -10,7 +10,7 @@ export default function ProphetStories() {
   const perticularProphet = totalProphets.find((p) => p.name === prophetName);
 
   const handleStoryClick = (index) => {
-    setActiveIndex((prev) => (prev === index ? null : index)); // toggle
+    setActiveIndex((prev) => (prev === index ? null : index));
   };
 
   return (
@@ -32,9 +32,6 @@ export default function ProphetStories() {
               <p className="story-title">{title}</p>
             </div>
             {activeIndex === index && (
-              // <p className="prophetstories-text">
-              //   {perticularProphet[`story${index + 1}`]}
-              // </p>
               <p className="prophetstories-text">
                 {perticularProphet[`story${index + 1}`]
                   .split("\n")

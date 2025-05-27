@@ -40,26 +40,23 @@ function App() {
       <SkeletonTheme baseColor="#e0e0e0" highlightColor="#f5f5f5">
         <BrowserRouter>
           <Logo />
+
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/quran" element={<Quran />} />
-            <Route path="/imam" element={<Imam />} />
-            <Route path="/surah" element={<PopSurah />} />
             <Route path="/quran/:chapterType/:id" element={<SpecifChapter />} />
             <Route
               path="/quran/:chapterType/:id/:startPage"
               element={<SpecificPage />}
             />
+            <Route path="/zakat" element={<Zakat />} />
             <Route path="/dua" element={<Dua />} />
             <Route path="/dhikr" element={<Dhikr />} />
             <Route path="/dhikr/:time" element={<DhikrTime />} />
-            <Route path="/prayer" element={<Prayer />} />
-            <Route path="/prayer/:prayerType" element={<PrayerType />} />
-            <Route path="/zakat" element={<Zakat />} />
+            <Route path="/stories" element={<Stories />} />
+            <Route path="/stories/:prophetName" element={<ProphetStories />} />
             <Route path="/hadith" element={<Hadith />} />
-            <Route path="/allah-names" element={<AllahNames />} />
-
             <Route path="/hadith/:hadithBooks" element={<HadithChapters />} />
             <Route
               path="/hadith/:hadithBooks/:chapterName"
@@ -69,16 +66,19 @@ function App() {
               path="/hadith/:hadithBooks/hadith/:hadithNumber"
               element={<SingleHadith />}
             />
-            <Route path="/stories" element={<Stories />} />
-            <Route path="/stories/:prophetName" element={<ProphetStories />} />
             <Route path="/history" element={<History />} />
             <Route path="/history/:name" element={<SingleHistory />} />
+            <Route path="/myths" element={<Myths />} />
+            <Route path="/allah-names" element={<AllahNames />} />
             <Route path="/sunnah" element={<Sunnah />} />
             <Route path="/sunnah/:name" element={<SingleSunnah />} />
+            <Route path="/imam" element={<Imam />} />
+            <Route path="/surah" element={<PopSurah />} />
 
-            <Route path="/myths" element={<Myths />} />
+            <Route path="/prayer" element={<Prayer />} />
+            <Route path="/prayer/:prayerType" element={<PrayerType />} />
+
             <Route path="/pillers/:piller" element={<PerticularPiller />} />
-
             <Route
               path="/afterlife/:perticularAfterlife"
               element={<PerticularAfterWorld />}

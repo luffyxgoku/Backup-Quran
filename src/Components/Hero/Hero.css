@@ -87,3 +87,15 @@
   bottom: 1.5rem;
   right: 1.5rem;
 }
+.stop-azan-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: crimson;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 999;
+}

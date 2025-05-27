@@ -4,10 +4,14 @@ import mapMarker from "../../assets/mapPin.png";
 import "./Hero.css";
 import { useFetch } from "../../Hooks/useFetch";
 import axios from "axios";
+import azanAudioFile from "../../assets/azan.mp3";
 
 export default function Hero() {
   const API_TOKEN = import.meta.env.VITE_API_TOKEN;
   const timeRef = useRef(null);
+  const audioRef = useRef(null);
+  const lastPlayedRef = useRef("");
+  const [isAzanPlaying, setIsAzanPlaying] = useState(false);
 
   const [prayerData, setPrayerData] = useState({
     timings: {},
@@ -100,8 +104,56 @@ export default function Hero() {
     });
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!prayerData.timings) return;
+
+      const now = new Date();
+      const h = now.getHours().toString().padStart(2, "0");
+      const m = now.getMinutes().toString().padStart(2, "0");
+      const currentTime = `${h}:${m}`;
+
+      const allPrayerTimes = Object.entries(prayerData.timings);
+
+      allPrayerTimes.forEach(([name, time]) => {
+        if (time === currentTime && lastPlayedRef.current !== time) {
+          if (audioRef.current) {
+            audioRef.current
+              .play()
+              .then(() => {
+                setIsAzanPlaying(true);
+              })
+              .catch((e) => {
+                console.error("Autoplay blocked or error:", e);
+              });
+            lastPlayedRef.current = time;
+          }
+        }
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [prayerData.timings]);
+
   return (
     <div className="hero-container">
+      <audio ref={audioRef} src={azanAudioFile} preload="auto" />
+
+      {isAzanPlaying && (
+        <button
+          onClick={() => {
+            if (audioRef.current) {
+              audioRef.current.pause();
+              audioRef.current.currentTime = 0;
+              setIsAzanPlaying(false);
+            }
+          }}
+          className="stop-azan-btn"
+        >
+          Stop Azan
+        </button>
+      )}
+
       <img src={heroImage} alt="hero-img" className="heroImage" />
       <div className="location-container">
         <div className="locate">
