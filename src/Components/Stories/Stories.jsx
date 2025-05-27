@@ -32,7 +32,6 @@ export default function Stories() {
       </div>
 
       <div className="stories-container">
-        {/* <p className="stories-title">Stories of the Prophets of Allah</p> */}
         <p className="names-main-heading">
           Timeless Stories of the Prophets of Allah
         </p>

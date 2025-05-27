@@ -54,6 +54,18 @@ export default function Sidebar({ setIsSidebarOpen }) {
           columnData={columnData8}
           setIsSidebarOpen={setIsSidebarOpen}
         />
+        <div className="share-side-c">
+          <a
+            href={`https://wa.me/?text=${encodeURIComponent(
+              "Check out this amazing Quran app: https://quran-space.netlify.app/"
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="share-side-a"
+          >
+            Share QuranSpace via WhatsApp
+          </a>
+        </div>
       </motion.div>
     </>
   );

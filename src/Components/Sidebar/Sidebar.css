@@ -47,3 +47,15 @@
   font-size: 0.9rem;
   color: black;
 }
+
+.share-side-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.share-side-a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: rgb(191, 163, 20);
+}

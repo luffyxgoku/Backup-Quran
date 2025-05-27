@@ -101,3 +101,14 @@
   filter: brightness(0) saturate(100%) invert(91%) sepia(14%) saturate(466%)
     hue-rotate(319deg) brightness(101%) contrast(95%);
 }
+.share-footer-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+.share-footer-a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: white;
+}

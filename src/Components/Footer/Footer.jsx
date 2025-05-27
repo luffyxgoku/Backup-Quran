@@ -80,7 +80,18 @@ export default function Footer() {
           <img src={gmailLogo} alt="Gmail" className="footer-icon-img" />
         </a>
       </div>
-
+      <div className="share-footer-c">
+        <a
+          href={`https://wa.me/?text=${encodeURIComponent(
+            "Check out this amazing Quran app: https://quran-space.netlify.app/"
+          )}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="share-footer-a"
+        >
+          Share QuranSpace via WhatsApp
+        </a>
+      </div>
       <div className="footer-bottom-bar">
         <p className="footer-copy-left">
           &copy; {new Date().getFullYear()}{" "}
