@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://quran-portal.netlify.app/sitemap.xml
