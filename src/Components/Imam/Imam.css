@@ -8,7 +8,8 @@
 .imam-data-c {
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-bottom: 4.5rem;
+  /* margin-bottom: 4.5rem; */
+  margin-bottom: 2rem;
 }
 
 .imam-info {
@@ -21,7 +22,7 @@
   text-align: center;
   height: 1.8rem;
   font-size: 1.3rem;
-  background-color: rgba(253, 243, 232, 255);
+  background-color: var(--bg-color-yellow);
 }
 .imam-des {
   font-size: 0.9rem;
@@ -34,6 +35,5 @@
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
-  color: rgb(191, 163, 20);
-  /* border: 1px solid red; */
+  color: var(--yellow-text);
 }

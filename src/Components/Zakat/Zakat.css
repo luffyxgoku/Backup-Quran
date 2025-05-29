@@ -8,8 +8,8 @@
 .zakat-calculator-container {
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-bottom: 5rem;
-  /* border: 2px solid red; */
+  /* margin-bottom: 5rem; */
+  margin-bottom: 2rem;
 }
 
 .zakat-calculator-title {
@@ -39,12 +39,6 @@
   font-weight: 500;
 }
 
-/* .zakat-input-group input {
-  padding: 0.4rem;
-  margin-top: 0.2rem;
-  font-size: 1rem;
-} */
-
 .zakat-input {
   width: 100%;
   background: transparent;
@@ -58,13 +52,13 @@
 }
 
 .zakat-submit-button {
-  padding: 0.6rem;
+  padding: 0.3rem;
   background-color: rgba(120, 85, 70, 255);
-
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1.1rem;
 }
 
 .zakat-result {
@@ -73,12 +67,14 @@
 
 .zakat-due {
   font-size: 1.2rem;
-  font-weight: bold;
-  color: green;
+  color: black;
+  text-align: center;
 }
 
 .zakat-not-eligible {
-  color: red;
+  color: black;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .loading-message {

@@ -17,7 +17,12 @@ export default function AfterLifeCard({
         <h1 className="afterlife-title">{title}</h1>
         <p className="afterlife-description">{description}</p>
       </div>
-      <img src={imgSrc} alt="afterlife" className="afterlife-img-right" />
+      <img
+        src={imgSrc}
+        alt="afterlife"
+        className="afterlife-img-right"
+        loading="lazy"
+      />
     </div>
   );
 }

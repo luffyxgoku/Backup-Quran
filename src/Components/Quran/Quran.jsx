@@ -36,9 +36,8 @@ export default function Quran() {
     setSearchQuery(event.target.value);
   };
 
-  // Filter results based on active section
   const normalizeText = (text) => {
-    return text.toLowerCase().replace(/[^a-z0-9\s]/gi, ""); // Removes special characters
+    return text.toLowerCase().replace(/[^a-z0-9\s]/gi, "");
   };
 
   const filteredData =
@@ -63,10 +62,6 @@ export default function Quran() {
           The Holy Quran The Final Revelation from Allah
         </p>
         <div className="search-container">
-          {/* <div className="left-search-container">
-            <img src={menu} alt="menu" className="menu-img" />
-            <p className="al-quran-text">Al Quran</p>
-          </div> */}
           <div className="right-search-container">
             <div className="input-container">
               <input

@@ -61,6 +61,7 @@ export default function Stories() {
                 src={prophet.icon}
                 alt="prophetimg"
                 className="prophets-images"
+                loading="lazy"
               />
             </div>
           ))}

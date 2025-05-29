@@ -16,7 +16,12 @@ export default function Pillers() {
           key={piller.title}
           onClick={() => handleNavigation(piller.location)}
         >
-          <img src={piller.imgSrc} alt={piller.title} className="piller-icon" />
+          <img
+            src={piller.imgSrc}
+            alt={piller.title}
+            className="piller-icon"
+            loading="lazy"
+          />
           <p className="piller-title">{piller.title}</p>
         </div>
       ))}

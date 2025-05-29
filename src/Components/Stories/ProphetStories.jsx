@@ -17,7 +17,12 @@ export default function ProphetStories() {
     <div className="parent-prophet-cont">
       <div className="prophetstories-cont">
         <div className="prophetstories-banner-container">
-          <img src={prophet.img} alt="image" className="prophetstories-img" />
+          <img
+            src={prophet.img}
+            alt="image"
+            className="prophetstories-img"
+            loading="lazy"
+          />
         </div>
         <p className="prophetstories-title">Story of Prophet {prophet.name}</p>
       </div>

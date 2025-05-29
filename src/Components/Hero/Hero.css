@@ -63,11 +63,10 @@
 .time-name {
   font-size: 1.1rem;
   color: white;
-  /* Added this [margin-top] line to remove margin */
   margin-top: -0.4rem;
 }
 .prayer-time-name {
-  color: rgb(243, 199, 2);
+  color: var(--time-yellow-text);
   font-size: 1.1rem;
 }
 .upcoming-prayer-time-container {
@@ -79,7 +78,7 @@
   gap: 0.05rem;
 }
 .specifir-prayer-name {
-  color: rgb(243, 199, 2);
+  color: var(--time-yellow-text);
   font-size: 1rem;
 }
 .time-left-container {

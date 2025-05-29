@@ -11,7 +11,7 @@
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: rgb(191, 163, 20);
+  color: var(--yellow-text);
 }
 .names-cont {
   display: flex;
@@ -20,10 +20,11 @@
   gap: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-bottom: 4.5rem;
+  /* margin-bottom: 4.5rem; */
+  margin-bottom: 2rem;
 }
 .single-name-cont {
-  background-color: rgba(253, 243, 232, 255);
+  background-color: var(--bg-color-yellow);
   display: flex;
   flex-direction: column;
   align-items: center;

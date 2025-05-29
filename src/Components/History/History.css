@@ -5,7 +5,9 @@
 }
 .singlehistory-cont {
   margin-top: 1rem;
-  margin-bottom: 4.5rem;
+  /* margin-bottom: 4.5rem; */
+  margin-bottom: 2rem;
+
   margin-left: 1rem;
   margin-right: 1rem;
 }

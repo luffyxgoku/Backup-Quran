@@ -28,7 +28,12 @@ export default function Sidebar({ setIsSidebarOpen }) {
         transition={{ type: "tween", duration: 0.4 }}
       >
         <div className="sidebar-banner-img-container">
-          <img src={sidebarImg} alt="banner" className="sidebar-banner" />
+          <img
+            src={sidebarImg}
+            alt="banner"
+            className="sidebar-banner"
+            loading="lazy"
+          />
         </div>
         <HadithColumn
           columnData={columnData7}

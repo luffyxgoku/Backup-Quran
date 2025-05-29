@@ -10,8 +10,5 @@ export default function PillerBanner({ imgSrc }) {
       </div>
       <img src={imgSrc} alt="banner-img" className="banner-piller-img" />
     </div>
-    // <div className="hadith-animation-banner">
-    //   <img className="load-animation-unique" src={} alt="img" />
-    // </div>
   );
 }

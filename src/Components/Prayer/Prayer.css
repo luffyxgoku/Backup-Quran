@@ -8,18 +8,15 @@
 .prayer-container {
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-bottom: 4.5rem;
+  /* margin-bottom: 4.5rem; */
+  margin-bottom: 2rem;
 }
 
 .prayer-visual-text {
-  /* font-size: 1.2rem;
-  margin: 0.8rem 0rem;
-  text-align: center; */
-
   font-size: 1.3rem;
   text-align: center;
   margin-top: 1rem;
-  color: rgb(191, 163, 20);
+  color: var(--yellow-text);
 }
 
 .prayer-visual-container {
@@ -45,22 +42,17 @@
 }
 .prayer-info-container {
   margin-top: 1.2rem;
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
-  /* margin-bottom: 4.5rem; */
 }
 .prayer-info {
-  /* margin-left: 1.5rem;
-  margin-right: 1.5rem; */
   height: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 0.6rem;
-  /* background-color: rgb(243, 243, 243); */
-  background-color: rgba(253, 243, 232, 255);
+  background-color: var(--bg-color-yellow);
   border-radius: 0.4rem;
   cursor: pointer;
 }

@@ -1,7 +1,6 @@
 import salah from "../../../assets/salah.png";
 import kalima from "../../../assets/kalima.png";
 import wudu from "../../../assets/wudu.png";
-
 import concerns from "../../../assets/concerns.png";
 import how from "../../../assets/how.png";
 import impdua from "../../../assets/impDua.png";
@@ -36,5 +35,9 @@ export const prayerInfo = [
   {
     prayerInfoIcon: funeral,
     prayerInfoText: "Funeral Prayer",
+  },
+  {
+    prayerInfoIcon: funeral,
+    prayerInfoText: "Jumua'h Prayer",
   },
 ];

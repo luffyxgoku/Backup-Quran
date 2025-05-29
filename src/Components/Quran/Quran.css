@@ -1,6 +1,6 @@
 .quran-service-container {
-  margin-bottom: 5rem;
-  /* margin-left: ; */
+  /* margin-bottom: 5rem; */
+  margin-bottom: 2rem;
 }
 .quran-nav-container {
   position: sticky;
@@ -14,14 +14,11 @@
   align-items: center;
   padding: 5px 0px;
   box-sizing: border-box;
-  /* background-color: rgb(0, 163, 22); */
   background-color: rgba(120, 85, 70, 255);
 }
 .quran-nav-element {
-  /* background-color: rgb(219, 255, 222); */
   background-color: rgba(200, 155, 118, 255);
   height: 100%;
-  /* width: 4rem; */
   border-radius: 5px;
   padding: 10px;
   box-sizing: border-box;
@@ -31,7 +28,6 @@
 }
 .quran-nav-element-inactive {
   height: 100%;
-  /* width: 4rem; */
   border-radius: 5px;
   padding: 10px;
   box-sizing: border-box;
@@ -50,7 +46,6 @@
   bottom: 4rem;
   left: 0;
   z-index: 50;
-  /* border: 1px solid red; */
   text-align: center;
 }
 .close-img {
@@ -61,13 +56,6 @@
   width: 1.3rem;
   height: 1.3rem;
 }
-/* .audio-tag {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-} */
 
 .audio-tag {
   position: absolute;
@@ -82,34 +70,28 @@
   overflow: hidden;
 }
 
-/* Background color for the audio player */
 .audio-tag::-webkit-media-controls-panel {
   background: rgba(120, 85, 70, 255);
   color: white !important;
 }
 
-/* Make play/pause button white */
 .audio-tag::-webkit-media-controls-play-button {
   filter: invert(1);
 }
 
-/* Make time display (current time & duration) white */
 .audio-tag::-webkit-media-controls-current-time-display,
 .audio-tag::-webkit-media-controls-time-remaining-display {
   color: white !important;
 }
 
-/* Make progress bar white */
 .audio-tag::-webkit-media-controls-timeline {
   filter: invert(1);
 }
 
-/* Make volume slider white */
 .audio-tag::-webkit-media-controls-volume-slider {
   filter: invert(1);
 }
 
-/* Make volume slider track & thumb white */
 .audio-tag::-webkit-media-controls-volume-slider-container {
   filter: invert(1);
 }
@@ -118,26 +100,22 @@
   filter: invert(1);
 }
 
-/* Make the three-dot menu (settings) white */
 .audio-tag::-webkit-media-controls-overflow-button {
   filter: invert(1);
   opacity: 1;
   mix-blend-mode: difference;
 }
 
-/* Extra fix for volume controls */
 .audio-tag::-webkit-media-controls-volume-slider-container {
   filter: invert(1);
 }
 
-/* Firefox Specific Styles */
 .audio-tag::-moz-range-track,
 .audio-tag::-moz-range-thumb {
   filter: invert(1);
 }
 
 .chapter-container {
-  /* border: 5px solid black; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -146,22 +124,17 @@
   margin-right: 0.8rem;
   padding: 0.5rem;
   height: 4rem;
-  /* background-color: rgb(253, 249, 232); */
-  /* background-color: rgb(251, 241, 225); */
   border-radius: 10px;
 }
 
 .chaper-no-container {
-  /* border: 1px solid blue; */
   width: 2.2rem;
   height: 2.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  /* background-color: rgb(242, 251, 242); */
-  /* background-color: rgb(251, 225, 131); */
-  background-color: rgba(252, 244, 232, 255);
+  background-color: var(--bg-color-yellow);
   position: relative;
 }
 .chapter-no {
@@ -247,9 +220,9 @@
 }
 .all-verses-container {
   background-color: rgba(255, 250, 245, 255);
-
   margin: 1rem;
-  margin-bottom: 4.5rem;
+  /* margin-bottom: 4.5rem; */
+  margin-bottom: 2rem;
 }
 .verse-container {
   display: flex;
@@ -267,7 +240,7 @@
 .english-text {
   text-align: left;
   font-size: 1rem;
-  background-color: rgba(253, 243, 232, 255);
+  background-color: var(--bg-color-yellow);
   border-radius: 5px;
   padding: 7px;
   box-sizing: border-box;
@@ -318,13 +291,12 @@
   padding: 5px 0px;
   box-sizing: border-box;
   text-align: center;
-  background-color: rgba(253, 243, 232, 255);
+  background-color: var(--bg-color-yellow);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .revelation-container {
-  /* height: 6rem; */
   display: flex;
   justify-content: space-between;
   margin-right: 1.5rem;
@@ -377,18 +349,14 @@
   justify-content: center;
   align-items: center;
   margin: 1rem 1.5rem;
-  /* background-color: antiquewhite; */
   height: 3rem;
 }
 .left-search-container {
-  /* border: 1px solid blue; */
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  /* width: 8rem; */
 }
 .right-search-container {
-  /* border: 0.5px solid brown; */
   border: 1px solid black;
   position: relative;
   width: 100%;
@@ -414,7 +382,6 @@
   font-size: 0.9rem;
 }
 .search-img-container {
-  /* border: 1px solid black; */
   width: 1.5rem;
   height: 100%;
   position: absolute;
@@ -434,7 +401,6 @@
   font-size: 1.2rem;
   font-family: bold;
   font-family: "Nunito Bold";
-  /* border: 1px solid red; */
 }
 
 .menu-img {
@@ -449,7 +415,6 @@
   gap: 1rem;
   margin: 1rem 1.5rem;
   height: 3rem;
-  /* border: 1px solid red; */
 }
 .bismillah-container {
   width: 100%;
@@ -462,10 +427,8 @@
   object-fit: contain;
 }
 
-/* GPT CSS */
-
 .page-quran-container {
-  text-align: right; /* Aligns text to the right for Arabic */
+  text-align: right;
   font-family: "Amiri Quran";
   font-size: 2rem;
   padding-right: 5px;
@@ -473,15 +436,11 @@
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 1rem;
-  /* line-height: 2; */
-  /* direction: rtl;  */
 }
 
 .page-quran-verse {
-  display: inline; /* Keeps all ayahs in a single line */
-  /* margin-left: 8px; Adds space between ayahs */
+  display: inline;
   white-space: normal;
-  /* border: 1px solid green; */
 }
 
 .page-ayah-number {
@@ -490,7 +449,6 @@
   color: #888;
 }
 
-/* gpt css ends */
 .next-container {
   display: flex;
   justify-content: center;
@@ -539,5 +497,6 @@
 }
 .quran-pagination {
   margin-top: 1.5rem;
-  margin-bottom: 4.5rem;
+  /* margin-bottom: 4.5rem; */
+  margin-bottom: 2rem;
 }

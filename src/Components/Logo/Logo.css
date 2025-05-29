@@ -8,7 +8,6 @@
   position: sticky;
   top: 0;
   height: 4rem;
-  /* background-color: rgba(253, 243, 232, 255); */
   background-color: white;
   border-radius: 2rem;
 }
@@ -30,7 +29,6 @@
   width: 2rem;
   height: 2rem;
   object-fit: contain;
-  /* border: 1px solid red; */
 }
 .main-logo-app {
   margin-left: 0.5rem;

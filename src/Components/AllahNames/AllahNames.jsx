@@ -9,7 +9,12 @@ export default function AllahNames() {
   return (
     <>
       <div className="hadith-animation-banner">
-        <img className="load-animation-unique" src={banner} alt="img" />
+        <img
+          className="load-animation-unique"
+          src={banner}
+          alt="img"
+          loading="lazy"
+        />
       </div>
       <p className="names-main-heading">
         Discover the 99 Names of Allah ﷻ and Their Divine Attributes

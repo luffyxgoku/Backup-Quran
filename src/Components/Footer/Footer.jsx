@@ -16,7 +16,7 @@ export default function Footer() {
 
   return (
     <div className="footer-container">
-      <img src={bannerImage} className="footer-bg" alt="bg" />
+      <img src={bannerImage} className="footer-bg" alt="bg" loading="lazy" />
       <div className="footer-columns-no-overlay">
         <div className="footer-column">
           {columnOne.map((item, index) => (

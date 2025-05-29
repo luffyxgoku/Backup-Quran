@@ -33,6 +33,7 @@ import AllahNames from "./Components/AllahNames/AllahNames";
 import Imam from "./Components/Imam/Imam";
 import PopSurah from "./Components/PopSurah/PopSurah";
 import Notfound from "./Components/Notfound/Notfound";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -87,6 +88,7 @@ function App() {
           </Routes>
 
           <Navbar />
+          <Footer />
         </BrowserRouter>
       </SkeletonTheme>
     </>

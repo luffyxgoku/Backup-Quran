@@ -6,14 +6,10 @@
 }
 
 .footer-container {
-  /* width: full;
-  height: 100%;
-  object-fit: contain;
-  color: white; */
-  /* background-color: black; */
   color: white;
   position: relative;
   z-index: 1;
+  margin-bottom: 4rem;
 }
 .footer-bg {
   position: absolute;
@@ -94,9 +90,6 @@
 
 .sami-link,
 .shad-link {
-  /* font-size: 0.9rem; */
-  /* color: rgb(191, 163, 20); */
-
   text-decoration: none;
   filter: brightness(0) saturate(100%) invert(91%) sepia(14%) saturate(466%)
     hue-rotate(319deg) brightness(101%) contrast(95%);

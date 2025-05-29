@@ -15,7 +15,7 @@ export default function About() {
   return (
     <>
       <div className="about-bg-container">
-        <img src={footerbg} alt="bg" className="about-bg" />
+        <img src={footerbg} alt="bg" className="about-bg" loading="lazy" />
       </div>
       <div className="about-sec-cont">
         {aboutOne.map((section, index) => (

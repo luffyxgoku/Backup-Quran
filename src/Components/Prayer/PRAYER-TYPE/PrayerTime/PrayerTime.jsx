@@ -40,6 +40,12 @@ export default function PrayerTime() {
             icon: fajr,
           },
           {
+            name: "Imsak",
+            rakats: "End of Suhoor",
+            time: response.data.data.timings.Imsak,
+            icon: asr,
+          },
+          {
             name: "Sunrises",
             time: response.data.data.timings.Sunrise,
             icon: sunrise,

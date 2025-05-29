@@ -1,11 +1,14 @@
+:root {
+  --bg-color-yellow: rgba(253, 243, 232, 255);
+  --yellow-text: rgb(191, 163, 20);
+  --time-yellow-text: rgb(243, 199, 2);
+}
+
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Nunito Regular";
-  /* background-color: rgb(244, 244, 244); */
-  /* background-color: rgb(244, 236, 224); */
-  /* background-color: rgb(253, 248, 242); */
   background-color: rgba(255, 250, 245, 255);
 }
 

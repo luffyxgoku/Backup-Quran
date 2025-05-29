@@ -17,6 +17,7 @@ import books from "../../assets/books.png";
 import duaIcon from "../../assets/muslims.png";
 import impduaIcon from "../../assets/impduabanner.png";
 import funeralIcon from "../../assets/funeralbanner.png";
+import jumuahIcon from "../../assets/imam.png";
 
 export const BannerData = [
   {
@@ -138,5 +139,13 @@ export const FuneralBannerData = [
     heading: "Funeral Prayer",
     subheading: "Understand the steps and duas of the funeral prayer",
     imgSrc: funeralIcon,
+  },
+];
+
+export const JumuahBannerData = [
+  {
+    heading: "Jumua'h Sermon",
+    subheading: "Learn and give the Jumua'h Sermon",
+    imgSrc: jumuahIcon,
   },
 ];

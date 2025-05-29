@@ -11,13 +11,15 @@
   margin-top: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-bottom: 4.5rem;
+  /* margin-bottom: 4.5rem; */
+  margin-bottom: 2rem;
 }
 .stories-container {
   margin-top: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-bottom: 4.5rem;
+  /* margin-bottom: 4.5rem; */
+  margin-bottom: 2rem;
 }
 .stories-title {
   text-align: center;
@@ -30,7 +32,7 @@
   justify-content: space-between;
 }
 .single-prophet-cont {
-  background-color: rgba(253, 243, 232, 255);
+  background-color: var(--bg-color-yellow);
   border-radius: 0.5rem;
   display: flex;
   justify-content: space-between;
@@ -90,14 +92,14 @@
 }
 .prophet-reference-text {
   font-style: italic;
-  color: rgb(191, 163, 20);
-  border-top: 1px dashed rgb(191, 163, 20);
+  color: var(--yellow-text);
+  border-top: 1px dashed var(--yellow-text);
   padding-top: 0.5rem;
   font-size: 0.9rem;
 }
 
 .prophet-story-list {
-  background-color: rgba(253, 243, 232, 255);
+  background-color: var(--bg-color-yellow);
   border-radius: 0.4rem;
   padding: 1rem;
   margin-bottom: 0.5rem;

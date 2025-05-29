@@ -31,18 +31,18 @@
   color: white;
 }
 .random-num {
-  color: rgb(191, 163, 20);
+  color: var(--yellow-text);
 }
 .randomhadith-narr {
   font-size: 1rem;
-  color: rgba(253, 243, 232, 255);
+  color: var(--bg-color-yellow);
   font-weight: bold;
   text-align: center;
 }
 .randomhadith-english {
   font-size: 0.9rem;
   line-height: 1.5rem;
-  color: rgb(191, 163, 20);
+  color: var(--yellow-text);
 }
 .readmore {
   color: white;
@@ -57,7 +57,7 @@
 }
 .whatsapp-share-btn {
   text-decoration: none;
-  background-color: rgb(191, 163, 20);
+  background-color: var(--yellow-text);
   color: white;
   width: 3.5rem;
   text-align: center;

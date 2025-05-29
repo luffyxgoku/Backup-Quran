@@ -57,5 +57,5 @@
 .share-side-a {
   text-decoration: none;
   font-size: 0.9rem;
-  color: rgb(191, 163, 20);
+  color: var(--yellow-text);
 }

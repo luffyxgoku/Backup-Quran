@@ -7,6 +7,7 @@ import DifferentPrayer from "./PRAYER-TYPE/DifferentPrayer/DifferentPrayer";
 import ImportantDua from "./PRAYER-TYPE/ImportantDua/ImportantDua";
 import FuneralPrayer from "./PRAYER-TYPE/FuneralPrayer/FuneralPrayer";
 import Purification from "./PRAYER-TYPE/Purification/Purification";
+import Jumuah from "./PRAYER-TYPE/Jumua'h/Jumuah";
 
 export default function PrayerType() {
   const { prayerType } = useParams();
@@ -19,6 +20,7 @@ export default function PrayerType() {
       {prayerType === "How to perform different prayer" && <DifferentPrayer />}
       {prayerType === "Important Dua for Prayer" && <ImportantDua />}
       {prayerType === "Funeral Prayer" && <FuneralPrayer />}
+      {prayerType === "Jumua'h Prayer" && <Jumuah />}
     </div>
   );
 }

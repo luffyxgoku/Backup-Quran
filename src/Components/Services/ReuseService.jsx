@@ -13,7 +13,7 @@ export default function ReuseService({ imgSrc, heading, subHeading, path }) {
         <p className="reuse-sub-text">{subHeading}</p>
       </div>
       <div className="reuse-right">
-        <img src={imgSrc} className="reuse-img" alt={imgSrc} />
+        <img src={imgSrc} className="reuse-img" alt={imgSrc} loading="lazy" />
       </div>
     </div>
   );
