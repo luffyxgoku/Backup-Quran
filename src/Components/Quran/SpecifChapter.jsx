@@ -11,8 +11,15 @@ import copy from "../../assets/copy.png";
 import bismillah from "../../assets/bismillah.png";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import copydark from "../../assets/copydark.png";
+import ribbon from "../../assets/ribbon.png";
+import playdark from "../../assets/play-dark.png";
+
+import { useTheme } from "../../Context/ThemeContext";
 
 export default function SpecifChapter() {
+  const { theme } = useTheme();
+
   const [loading, setLoading] = useState(false);
   const [isTranlationActive, setIsTranslationActive] = useState(true);
   const [quranChapter, setQuranChapter] = useState({
@@ -190,10 +197,18 @@ export default function SpecifChapter() {
                       <div className="verse-util">
                         <p className="number">{index + 1}</p>
                         <div className="share-container">
-                          <img src={play} alt="" className="share-img" />
-                          <img src={save} alt="" className="share-img" />
                           <img
-                            src={copy}
+                            src={theme ? playdark : play}
+                            alt=""
+                            className="share-img"
+                          />
+                          <img
+                            src={theme ? save : ribbon}
+                            alt=""
+                            className="share-img"
+                          />
+                          <img
+                            src={theme ? copydark : copy}
                             alt="copy"
                             className="share-img"
                             onClick={() =>

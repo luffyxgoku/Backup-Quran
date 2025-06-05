@@ -2,6 +2,7 @@
 .singlehistory-heading {
   margin: 0;
   padding: 0;
+  color: var(--text-black-white);
 }
 .singlehistory-cont {
   margin-top: 1rem;

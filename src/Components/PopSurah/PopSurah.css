@@ -46,7 +46,8 @@
   font-family: "Amiri Quran";
   font-size: 1.8rem;
   padding-bottom: 0.5rem;
-  border-bottom: 0.5px solid black;
+  border-bottom: 0.5px solid var(--text-black-white);
+  color: var(--text-black-white);
 }
 .single-surah {
   display: flex;
@@ -61,13 +62,15 @@
 .ps-fazilat {
   font-size: 0.9rem;
   text-align: left;
+  color: var(--text-black-white);
 }
 .ps-ref {
   font-size: 0.8rem;
-  color: gray;
+  color: var(--gray-darkwhite);
   text-align: right;
 }
 
 .ps-eachayah {
   font-size: 0.7rem;
+  color: var(--gray-darkwhite);
 }

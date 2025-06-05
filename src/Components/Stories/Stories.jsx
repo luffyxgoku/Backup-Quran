@@ -3,10 +3,14 @@ import { allProphets } from "./DATA/storiesData";
 import { useNavigate } from "react-router-dom";
 import "./Stories.css";
 import search from "../../assets/search.png";
-
+import searchdark from "../../assets/searchdark.png";
 import storyimg from "../../assets/prophet-stories.jpg";
 
+import { useTheme } from "../../Context/ThemeContext";
+
 export default function Stories() {
+  const { theme } = useTheme();
+
   const navigation = useNavigate();
 
   const [input, setInput] = useState("");
@@ -45,7 +49,11 @@ export default function Stories() {
               placeholder={"Eg. Muhammad"}
             />
             <div className="search-img-container">
-              <img src={search} alt="search" className="search-img" />
+              <img
+                src={theme ? searchdark : search}
+                alt="search"
+                className="search-img"
+              />
             </div>
           </div>
         </div>

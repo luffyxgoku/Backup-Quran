@@ -4,8 +4,13 @@ import { useNavigate, useParams } from "react-router-dom";
 import search from "../../assets/search.png";
 import Banner from "../Banner/Banner";
 import { HadithBannerData } from "../Banner/BannerData";
+import searchdark from "../../assets/searchdark.png";
+
+import { useTheme } from "../../Context/ThemeContext";
 
 export default function HadithChapters() {
+  const { theme } = useTheme();
+
   const { hadithBooks } = useParams();
   const [loading, setLoading] = useState(false);
   const [chapters, setChapters] = useState([]);
@@ -56,7 +61,7 @@ export default function HadithChapters() {
             />
             <div className="search-img-container">
               <img
-                src={search}
+                src={theme ? searchdark : search}
                 alt="search"
                 className="search-img"
                 onClick={() =>

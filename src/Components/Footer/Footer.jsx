@@ -7,7 +7,11 @@ import githubLogo from "../../assets/github.png";
 import gmailLogo from "../../assets/gmail.png";
 import "./Footer.css";
 
+import { useTheme } from "../../Context/ThemeContext";
+
 export default function Footer() {
+  const { theme } = useTheme();
+
   const navigate = useNavigate();
 
   const handleNavigate = (location) => {
@@ -15,8 +19,14 @@ export default function Footer() {
   };
 
   return (
-    <div className="footer-container">
-      <img src={bannerImage} className="footer-bg" alt="bg" loading="lazy" />
+    <div
+      className="footer-container"
+      style={theme ? { backgroundColor: "black" } : {}}
+    >
+      {!theme && (
+        <img src={bannerImage} className="footer-bg" alt="bg" loading="lazy" />
+      )}
+
       <div className="footer-columns-no-overlay">
         <div className="footer-column">
           {columnOne.map((item, index) => (

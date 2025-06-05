@@ -17,15 +17,18 @@
   margin-right: 1rem;
   margin-bottom: 1rem;
   font-size: 1rem;
+  color: var(--text-black-white);
 }
 .imam-name {
   text-align: center;
-  height: 1.8rem;
+  /* height: 1.8rem; */
   font-size: 1.3rem;
   background-color: var(--bg-color-yellow);
+  color: var(--text-black-white);
 }
 .imam-des {
   font-size: 0.9rem;
+  color: var(--text-black-white);
 }
 
 .imam-main-heading {

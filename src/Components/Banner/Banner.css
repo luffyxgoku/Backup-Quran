@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  background-color: black;
+  background-color: var(--piller-banner-bg);
   border-radius: 8px;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -28,7 +28,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  background-color: black;
+  background-color: var(--piller-banner-bg);
   border-radius: 8px;
   height: 5rem;
   width: 100%; /* Ensures it remains full width */
@@ -42,6 +42,7 @@
   margin-top: 1rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
+  color: var(--text-big-mainhead);
 }
 
 .carousel-left {

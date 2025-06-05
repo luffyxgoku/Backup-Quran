@@ -7,8 +7,13 @@ import Chapters from "./Chapters";
 import search from "../../assets/search.png";
 import menu from "../../assets/menu.png";
 import close from "../../assets/close.png";
+import searchdark from "../../assets/searchdark.png";
+
+import { useTheme } from "../../Context/ThemeContext";
 
 export default function Quran() {
+  const { theme } = useTheme();
+
   const [isChapterActive, setIsChapterActive] = useState(true);
   const [isJuzActive, setIsJuzActive] = useState(false);
   const [isPageActive, setIsPageActive] = useState(false);
@@ -72,7 +77,11 @@ export default function Quran() {
                 placeholder={isChapterActive ? "Eg. Al-Fatiha" : "Eg. Sayaqool"}
               />
               <div className="search-img-container">
-                <img src={search} alt="search" className="search-img" />
+                <img
+                  src={theme ? searchdark : search}
+                  alt="search"
+                  className="search-img"
+                />
               </div>
             </div>
           </div>
@@ -146,7 +155,6 @@ export default function Quran() {
           )}
         </div>
       </div>
-      {/* <Navbar /> */}
     </>
   );
 }

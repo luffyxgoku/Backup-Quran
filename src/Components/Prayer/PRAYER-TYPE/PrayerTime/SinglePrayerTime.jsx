@@ -1,5 +1,4 @@
 import React from "react";
-import home from "../../../../assets/home.png";
 
 export default function SinglePrayerTime({ Timings }) {
   return (

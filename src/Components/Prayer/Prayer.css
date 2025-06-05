@@ -69,6 +69,7 @@
 .prayer-info-text {
   font-size: 0.9rem;
   text-align: left;
+  color: var(--text-black-white);
 }
 .left-info-container {
   margin-left: 0.7rem;

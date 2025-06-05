@@ -30,7 +30,6 @@ export default function IslamicMyths({ mythIcon, list }) {
             />
           </div>
 
-          {/* Reality shown outside the container */}
           {activeIndex === index && (
             <p className="myth-reality">{myth.reality}</p>
           )}

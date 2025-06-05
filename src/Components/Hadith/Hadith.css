@@ -51,6 +51,7 @@
 .hadith-name {
   text-align: center;
   font-weight: bold;
+  color: var(--text-black-white);
 }
 .hadiths-specific-chap-cont {
   margin-right: 1rem;

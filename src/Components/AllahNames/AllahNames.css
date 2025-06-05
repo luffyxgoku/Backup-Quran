@@ -39,13 +39,13 @@
 
 .name-english {
   font-size: 1.2rem;
-  color: rgba(0, 0, 0, 0.7);
+  color: var(--text-black-white);
   margin-bottom: 0.1rem;
 }
 .name-meaning {
   font-size: 1rem;
   margin-bottom: 0.1rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--gray-darkwhite);
   text-align: center;
 }
 .name-number {

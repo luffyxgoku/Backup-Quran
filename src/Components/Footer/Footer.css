@@ -10,6 +10,7 @@
   position: relative;
   z-index: 1;
   margin-bottom: 4rem;
+  border-top: 1px solid #ffffff50;
 }
 .footer-bg {
   position: absolute;
@@ -40,6 +41,7 @@
 
 .footer-item-text {
   font-size: 0.8rem;
+  color: var(--white-yellow);
 }
 
 .footer-icons-section {
@@ -103,5 +105,5 @@
 .share-footer-a {
   text-decoration: none;
   font-size: 0.8rem;
-  color: white;
+  color: var(--white-yellow);
 }

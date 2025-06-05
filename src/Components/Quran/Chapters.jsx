@@ -5,6 +5,9 @@ import play from "../../assets/play.png";
 import axios from "axios";
 import Lottie from "lottie-react";
 import loadingAnimation from "../../assets/animation.json";
+import playdark from "../../assets/play-dark.png";
+
+import { useTheme } from "../../Context/ThemeContext";
 
 export default function Chapters({
   name,
@@ -18,6 +21,8 @@ export default function Chapters({
   isChapterActive,
   setAudioFileSrc,
 }) {
+  const { theme } = useTheme();
+
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const handleChapterNavigation = () => {
@@ -70,7 +75,11 @@ export default function Chapters({
                   animationData={loadingAnimation}
                 />
               ) : (
-                <img src={play} alt="Play" className="play-button" />
+                <img
+                  src={theme ? playdark : play}
+                  alt="Play"
+                  className="play-button"
+                />
               )}
             </div>
           )}

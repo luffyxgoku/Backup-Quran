@@ -13,9 +13,9 @@
   position: fixed;
   top: 0;
   right: 0;
-  background-color: white;
   z-index: 1001;
-  background-color: rgba(255, 250, 245, 255);
+  background-color: var(--bg-color);
+
   overflow-y: scroll;
 }
 .sidebar-banner-img-container {
@@ -45,7 +45,7 @@
 }
 .column-contents {
   font-size: 0.9rem;
-  color: black;
+  color: var(--text-black-white);
 }
 
 .share-side-c {

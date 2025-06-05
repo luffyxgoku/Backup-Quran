@@ -34,10 +34,13 @@ import Imam from "./Components/Imam/Imam";
 import PopSurah from "./Components/PopSurah/PopSurah";
 import Notfound from "./Components/Notfound/Notfound";
 import Footer from "./Components/Footer/Footer";
+import { useTheme } from "./Context/ThemeContext";
 
 function App() {
+  const { theme } = useTheme();
+
   return (
-    <>
+    <div className={theme ? "dark-mode" : "light-mode"}>
       <SkeletonTheme baseColor="#e0e0e0" highlightColor="#f5f5f5">
         <BrowserRouter>
           <Logo />
@@ -91,7 +94,7 @@ function App() {
           <Footer />
         </BrowserRouter>
       </SkeletonTheme>
-    </>
+    </div>
   );
 }
 

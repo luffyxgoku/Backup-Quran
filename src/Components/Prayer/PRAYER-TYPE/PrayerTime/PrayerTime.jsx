@@ -100,6 +100,7 @@ export default function PrayerTime() {
         <p className="prayer-title-timing">Prayer Timings </p>
         <img src={clock} alt="salah" className="prayer-icon" />
       </div>
+
       <SinglePrayerTime Timings={timings} />
     </>
   );

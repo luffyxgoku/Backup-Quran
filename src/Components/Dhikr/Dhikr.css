@@ -56,7 +56,7 @@
 }
 .image-name {
   font-size: 1rem;
-  color: black;
+  color: var(--text-black-white);
   font-family: "Nunito Bold";
 }
 
@@ -80,6 +80,7 @@
   font-size: 1.4rem;
   line-height: 2.1;
   margin-bottom: 1rem;
+  color: var(--text-black-white);
 }
 
 .dhikrtime-transliteration {
@@ -87,23 +88,26 @@
   font-size: 1.1rem;
   font-family: "Nunito LightItalic";
   margin-bottom: 1rem;
+  color: var(--text-black-white);
 }
 .dhikrtime-translation,
 .dhikrtime-virtue {
   margin-bottom: 1rem;
   font-size: 1rem;
+  color: var(--text-black-white);
 }
 
 .dhikrtime-reference {
   font-size: 0.8rem;
   text-align: right;
-  color: gray;
+  color: var(--text-big-head-white);
 }
 .dhikrtime-title {
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 1rem;
   font-weight: bold;
+  color: var(--text-black-white);
 }
 .translation-container-dhikr {
   display: flex;

@@ -20,7 +20,6 @@ export default function Dua() {
         <img className="load-animation-unique" src={duaimg} alt="img" />
       </div>
       <div className="dua-container">
-        {/* <h1 className="heading-dua-text">Find peace in every moment</h1> */}
         <p className="names-main-heading">
           Find Tranquility Through Heartfelt Duas
         </p>
@@ -29,7 +28,6 @@ export default function Dua() {
           <p className="subheading-dua-text">Choose Your Mood & Recite a Dua</p>{" "}
           <img src={dua} alt="dua" className="dua-icon" />
         </div>
-        {/* Dropdown for mood or needs */}
         <div className="dropdown-container">
           <select
             className="mood-need-dropdown"
@@ -44,7 +42,6 @@ export default function Dua() {
             </option>
           </select>
         </div>
-        {/* Dropdown for mood or needs */}
 
         {selectedOption === "Your Mood" && (
           <div className="button-container">

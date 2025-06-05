@@ -23,11 +23,11 @@
 }
 .afterlife-title {
   font-size: 1.19rem;
-  color: black;
+  color: var(--text-black-white);
 }
 .afterlife-description {
   font-size: 0.9rem;
-  color: black;
+  color: var(--black-silver);
 }
 .afterlife-banner {
   height: 15rem;

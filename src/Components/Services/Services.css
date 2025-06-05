@@ -14,12 +14,14 @@
 }
 .explore-text {
   font-size: 1.3rem;
+  color: var(--text-big-mainhead);
 }
 .show-all-text {
   font-size: 0.9rem;
+  color: var(--text-black-white);
 }
 .worship-text {
-  color: gray;
+  color: var(--text-big-head-white);
 }
 .worship-text,
 .explore-text,
@@ -66,7 +68,9 @@
 
 .reuse-sub-text {
   font-size: 0.9rem;
+  color: var(--black-silver);
 }
 .reuse-main-text {
   font-size: 1rem;
+  color: var(--text-black-white);
 }

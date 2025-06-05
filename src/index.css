@@ -1,7 +1,38 @@
 :root {
+  --bg-color: rgba(255, 250, 245, 255);
   --bg-color-yellow: rgba(253, 243, 232, 255);
   --yellow-text: rgb(191, 163, 20);
   --time-yellow-text: rgb(243, 199, 2);
+  --piller-banner-bg: black;
+  --text-big-head-white: gray;
+  --text-big-mainhead: black;
+  --text-black-white: black;
+  --black-silver: rgb(0, 0, 0);
+  --quran-nav: rgba(120, 85, 70, 255);
+  --quran-nav-border: none;
+  --quran-srch-input: 1px solid black;
+  --text-brown-white: rgba(120, 85, 70, 255);
+  --gray-darkwhite: rgba(0, 0, 0, 0.5);
+  --white-yellow: white;
+  --white-dark: white;
+}
+body.dark-mode {
+  --bg-color: black;
+  --bg-color-yellow: #50554c;
+  --yellow-text: #ffdf5d;
+  --time-yellow-text: #eacb3f;
+  --piller-banner-bg: #2a3126;
+  --text-big-head-white: white;
+  --text-big-mainhead: #ffdf5d;
+  --text-black-white: white;
+  --black-silver: rgb(213, 213, 213);
+  --quran-nav: black;
+  --quran-nav-border: 1px solid white;
+  --quran-srch-input: 1px solid white;
+  --text-brown-white: white;
+  --gray-darkwhite: rgba(235, 224, 224, 0.671);
+  --white-yellow: rgb(191, 163, 20);
+  --white-dark: #2a2b29;
 }
 
 body {
@@ -9,7 +40,8 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Nunito Regular";
-  background-color: rgba(255, 250, 245, 255);
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @font-face {
