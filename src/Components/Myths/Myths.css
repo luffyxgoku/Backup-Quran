@@ -37,7 +37,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--bg-color-yellow);
+  background-color: var(--worship-card-bg);
+  border: var(--worship-card-border);
   border-radius: 0.4rem;
   padding: 0.4rem;
   box-sizing: border-box;

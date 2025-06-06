@@ -37,7 +37,8 @@
   justify-content: center;
   align-items: center;
   gap: 0.4rem;
-  background-color: var(--bg-color-yellow);
+  background-color: var(--worship-card-bg);
+  border: var(--worship-card-border);
   border-radius: 0.4rem;
   padding: 0.3rem;
   box-sizing: border-box;
@@ -68,7 +69,8 @@
   margin-bottom: 2rem;
 }
 .dhikrtime-single-container {
-  background-color: var(--bg-color-yellow);
+  background-color: var(--worship-card-bg);
+  border: var(--worship-card-border);
   margin-bottom: 1rem;
   border-radius: 0.4rem;
   padding: 0.2rem 0.4rem;
@@ -114,7 +116,8 @@
   gap: 0.5rem;
   align-items: center;
   margin-bottom: 1rem;
-  background-color: rgba(120, 85, 70, 255);
+  background-color: var(--translit-bg);
+  border: var(--worship-card-border);
   color: white;
   height: 2.5rem;
   border-radius: 0.4rem;

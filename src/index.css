@@ -15,13 +15,19 @@
   --gray-darkwhite: rgba(0, 0, 0, 0.5);
   --white-yellow: white;
   --white-dark: white;
+  --banner-border: none;
+  --worship-card-border: none;
+  --worship-card-bg: rgba(253, 243, 232, 255);
+  --card-bg-skintowhite: rgba(253, 243, 232, 255);
+  --mecca-info-bg: rgba(253, 237, 220, 255);
+  --translit-bg: rgba(120, 85, 70, 255);
 }
 body.dark-mode {
   --bg-color: black;
   --bg-color-yellow: #50554c;
   --yellow-text: #ffdf5d;
   --time-yellow-text: #eacb3f;
-  --piller-banner-bg: #2a3126;
+  --piller-banner-bg: black;
   --text-big-head-white: white;
   --text-big-mainhead: #ffdf5d;
   --text-black-white: white;
@@ -33,6 +39,12 @@ body.dark-mode {
   --gray-darkwhite: rgba(235, 224, 224, 0.671);
   --white-yellow: rgb(191, 163, 20);
   --white-dark: #2a2b29;
+  --banner-border: 0.8px dashed rgb(243, 199, 2);
+  --worship-card-border: 0.8px dashed white;
+  --worship-card-bg: black;
+  --card-bg-skintowhite: rgba(62, 61, 61, 0.584);
+  --mecca-info-bg: black;
+  --translit-bg: rgba(62, 61, 61, 0.584);
 }
 
 body {

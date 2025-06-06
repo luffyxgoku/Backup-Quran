@@ -41,13 +41,14 @@
   margin-bottom: 1.5rem;
 }
 .reuse-container {
-  width: 45%;
+  width: 44%;
   height: 5rem;
   display: flex;
   align-items: center;
   padding: 5px;
   border-radius: 0.5rem;
-  background-color: var(--bg-color-yellow);
+  background-color: var(--worship-card-bg);
+  border: var(--worship-card-border);
 }
 .reuse-img {
   width: 3rem;

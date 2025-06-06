@@ -125,7 +125,8 @@
   color: var(--text-black-white);
 }
 .dua-translation {
-  background-color: var(--bg-color-yellow);
+  background-color: var(--worship-card-bg);
+  border: var(--worship-card-border);
   padding-left: 0.4rem;
   padding-right: 0.4rem;
   padding-top: 0.2rem;
@@ -148,6 +149,7 @@
   padding: 1rem;
   box-sizing: border-box;
   margin-bottom: 0.5rem;
-  background-color: var(--bg-color-yellow);
+  background-color: var(--worship-card-bg);
+  border: var(--worship-card-border);
   color: var(--text-black-white);
 }

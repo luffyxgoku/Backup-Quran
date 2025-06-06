@@ -19,7 +19,8 @@
   padding: 1rem 0.5rem;
   box-sizing: border-box;
   border-radius: 0.4rem;
-  background-color: var(--bg-color-yellow);
+  background-color: var(--worship-card-bg);
+  border: var(--worship-card-border);
 }
 .afterlife-title {
   font-size: 1.19rem;

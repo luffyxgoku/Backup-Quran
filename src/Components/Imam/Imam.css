@@ -23,7 +23,8 @@
   text-align: center;
   /* height: 1.8rem; */
   font-size: 1.3rem;
-  background-color: var(--bg-color-yellow);
+  background-color: var(--card-bg-skintowhite);
+  border: var(--banner-border);
   color: var(--text-black-white);
 }
 .imam-des {

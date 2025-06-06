@@ -20,6 +20,7 @@
   height: 5rem;
   width: 90%; /* Ensures it remains full width */
   scroll-snap-align: start; /* Optional: Helps with snapping */
+  border: var(--banner-border);
 }
 .zakat-carousel {
   flex: 0 0 90%; /* Ensures the carousel takes full width */
@@ -33,6 +34,7 @@
   height: 5rem;
   width: 100%; /* Ensures it remains full width */
   scroll-snap-align: start; /* Optional: Helps with snapping */
+  border: var(--banner-border);
 }
 
 .banner-events-text {

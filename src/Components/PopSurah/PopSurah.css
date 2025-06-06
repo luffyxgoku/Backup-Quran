@@ -19,7 +19,8 @@
   gap: 2rem;
 }
 .ps-single-c {
-  background-color: var(--bg-color-yellow);
+  background-color: var(--worship-card-bg);
+  border: var(--banner-border);
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
