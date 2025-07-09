@@ -3,7 +3,7 @@ import move from "../../assets/move.png";
 import { prayerInfo } from "./DATA/PrayerData";
 import { useNavigate } from "react-router-dom";
 
-export default function PrayerInfo() {
+export default function PrayerInfo({ theme }) {
   const navigate = useNavigate();
   return (
     <>
@@ -17,11 +17,15 @@ export default function PrayerInfo() {
             <img
               src={prayer.prayerInfoIcon}
               alt="icon"
-              className="prayer-info-icon"
+              className={theme ? "prayer-info-icon-dark" : "prayer-info-icon"}
             />
             <p className="prayer-info-text">{prayer.prayerInfoText}</p>
           </div>
-          <img src={move} alt="" className="move-icon" />
+          <img
+            src={move}
+            alt=""
+            className={theme ? "move-icon-dark" : "move-icon"}
+          />
         </div>
       ))}
     </>

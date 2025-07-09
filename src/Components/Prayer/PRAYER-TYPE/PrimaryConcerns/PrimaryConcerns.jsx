@@ -4,8 +4,11 @@ import { PrayerConcernBannerData } from "../../../Banner/BannerData";
 import Banner from "../../../Banner/Banner";
 import move from "../../../../assets/move.png";
 import { primaryPrayerConcerns } from "./Data";
+import { useTheme } from "../../../../Context/ThemeContext";
 
 export default function PrimaryConcerns() {
+  const { theme } = useTheme();
+
   const [methodActive, setMethodActive] = useState("");
 
   const handlePurificatonClick = (concern) => {
@@ -32,7 +35,9 @@ export default function PrimaryConcerns() {
                 <img
                   src={move}
                   alt="icon"
-                  className={isActive ? "side-icon" : "below-icon"}
+                  className={`${isActive ? "side-icon" : "below-icon"} ${
+                    theme ? "icon-dark" : "icon-light"
+                  } `}
                 />
               </div>
               {isActive && (

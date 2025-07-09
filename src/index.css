@@ -25,6 +25,7 @@
   --random-yellowtowhite: rgba(253, 243, 232, 255);
   --yellow-white: rgb(191, 163, 20);
   --share-btnbg: rgb(191, 163, 20);
+  --white-silver: white;
 }
 body.dark-mode {
   --bg-color: black;
@@ -53,6 +54,7 @@ body.dark-mode {
   --random-yellowtowhite: white;
   --yellow-white: white;
   --share-btnbg: #50554c;
+  --white-silver: rgb(159, 159, 159);
 }
 
 body {

@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import bismillah from "../../assets/bismillah.png";
 
+import { useTheme } from "../../Context/ThemeContext";
+
 export default function AfterlifeInfo({ data }) {
+  const { theme } = useTheme();
   const [heading, setHeading] = useState(null);
   return (
     <div className="general-dua-container unique">
       <div className="bismillah-container-new">
-        <img src={bismillah} alt="bismillah" className="bismillah-new" />
+        <img
+          src={bismillah}
+          alt="bismillah"
+          className={theme ? "bismillah-dark" : "bismillah"}
+        />
       </div>
       {data.map((afterlife) => (
         <div key={afterlife.title} className="general-dua-block">

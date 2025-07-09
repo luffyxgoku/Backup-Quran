@@ -178,6 +178,12 @@
   width: 100%;
   object-fit: contain;
 }
+.play-button-dark {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  filter: invert(1);
+}
 .chapter-name,
 .chapter-verse-revelation,
 .chapter-no,
@@ -358,6 +364,12 @@
   width: 1.5rem;
   object-fit: contain;
 }
+.share-img-dark {
+  height: 1.5rem;
+  width: 1.5rem;
+  object-fit: contain;
+  filter: invert(1);
+}
 
 .search-container {
   display: flex;
@@ -411,6 +423,12 @@
   width: 100%;
   object-fit: contain;
 }
+.search-img-dark {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  filter: invert(1);
+}
 .no-results {
   color: var(--text-black-white);
   text-align: center;
@@ -447,6 +465,12 @@
   height: 100%;
   width: 100%;
   object-fit: contain;
+}
+.bismillah-dark {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  filter: invert(1);
 }
 
 .page-quran-container {

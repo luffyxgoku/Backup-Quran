@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import move from "../../assets/move.png";
+import { useTheme } from "../../Context/ThemeContext";
 
 export default function IslamicMyths({ mythIcon, list }) {
+  const { theme } = useTheme();
+
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleReality = (index) => {
@@ -21,12 +24,13 @@ export default function IslamicMyths({ mythIcon, list }) {
               <img src={mythIcon} alt="icon" className="myth-icon" />
               <p className="myth-title">{myth.myth}</p>
             </div>
+
             <img
               src={move}
               alt="icon"
-              className={
-                activeIndex === index ? "move-icon-rotate" : "move-icon"
-              }
+              className={`${
+                activeIndex === index ? "side-icon" : "below-icon"
+              } ${theme ? "icon-dark" : "icon-light"} `}
             />
           </div>
 

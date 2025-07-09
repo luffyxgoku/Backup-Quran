@@ -13,8 +13,11 @@ import isha from "../../../../assets/isha.png";
 import midnight from "../../../../assets/midnight.png";
 import clock from "../../../../assets/clock.png";
 import axios from "axios";
+import { useTheme } from "../../../../Context/ThemeContext";
 
 export default function PrayerTime() {
+  const { theme } = useTheme();
+
   const [timings, setTimings] = useState([]);
   const API_TOKEN = import.meta.env.VITE_API_TOKEN;
 
@@ -98,10 +101,14 @@ export default function PrayerTime() {
       <Hero />
       <div className="title-container">
         <p className="prayer-title-timing">Prayer Timings </p>
-        <img src={clock} alt="salah" className="prayer-icon" />
+        <img
+          src={clock}
+          alt="salah"
+          className={theme ? "prayer-icon-dark" : "prayer-icon"}
+        />
       </div>
 
-      <SinglePrayerTime Timings={timings} />
+      <SinglePrayerTime Timings={timings} theme={theme} />
     </>
   );
 }

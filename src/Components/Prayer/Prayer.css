@@ -61,10 +61,22 @@
   width: 1.5rem;
   object-fit: contain;
 }
+.prayer-info-icon-dark {
+  height: 1.5rem;
+  width: 1.5rem;
+  object-fit: contain;
+  filter: invert(1);
+}
 .move-icon {
   height: 30%;
   width: 2rem;
   object-fit: contain;
+}
+.move-icon-dark {
+  height: 30%;
+  width: 2rem;
+  object-fit: contain;
+  filter: invert(1);
 }
 .prayer-info-text {
   font-size: 0.9rem;

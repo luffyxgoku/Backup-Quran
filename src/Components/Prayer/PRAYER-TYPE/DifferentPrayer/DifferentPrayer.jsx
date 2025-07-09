@@ -4,8 +4,10 @@ import { DifferentPrayerBannerData } from "../../../Banner/BannerData";
 import Banner from "../../../Banner/Banner";
 import move from "../../../../assets/move.png";
 import bismillah from "../../../../assets/bismillah.png";
+import { useTheme } from "../../../../Context/ThemeContext";
 
 export default function DifferentPrayer() {
+  const { theme } = useTheme();
   const [methodActive, setMethodActive] = useState("");
 
   const handlePrayerClick = (prayer) => {
@@ -35,7 +37,9 @@ export default function DifferentPrayer() {
                 <img
                   src={move}
                   alt="icon"
-                  className={isActive ? "side-icon" : "below-icon"}
+                  className={`${isActive ? "side-icon" : "below-icon"} ${
+                    theme ? "icon-dark" : "icon-light"
+                  } `}
                 />
               </div>
               {isActive && (
@@ -58,17 +62,4 @@ export default function DifferentPrayer() {
       </div>
     </div>
   );
-}
-
-{
-  /* <p className="prayer-concern-points">
-{description.split(/(\*[^*]+\*)/).map((part, index) => {
-  if (part.startsWith("*") && part.endsWith("*")) {
-    return <em key={index}>{part.slice(1, -1)}</em>; // Italics
-  }
-  return (
-    <React.Fragment key={index}>{part}</React.Fragment>
-  );
-})}
-</p> */
 }

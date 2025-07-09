@@ -50,9 +50,9 @@ export default function Stories() {
             />
             <div className="search-img-container">
               <img
-                src={theme ? searchdark : search}
+                src={search}
                 alt="search"
-                className="search-img"
+                className={theme ? "search-img-dark" : "search-img"}
               />
             </div>
           </div>

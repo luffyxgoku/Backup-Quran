@@ -7,7 +7,6 @@ import Chapters from "./Chapters";
 import search from "../../assets/search.png";
 import menu from "../../assets/menu.png";
 import close from "../../assets/close.png";
-import searchdark from "../../assets/searchdark.png";
 
 import { useTheme } from "../../Context/ThemeContext";
 
@@ -78,9 +77,9 @@ export default function Quran() {
               />
               <div className="search-img-container">
                 <img
-                  src={theme ? searchdark : search}
+                  src={search}
                   alt="search"
-                  className="search-img"
+                  className={theme ? "search-img-dark" : "search-img"}
                 />
               </div>
             </div>

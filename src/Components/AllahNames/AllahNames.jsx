@@ -4,8 +4,11 @@ import bismillah from "../../assets/bismillah.png";
 
 import { Names } from "./DATA/Data";
 import "./AllahNames.css";
+import { useTheme } from "../../Context/ThemeContext";
 
 export default function AllahNames() {
+  const { theme } = useTheme();
+
   return (
     <>
       <div className="hadith-animation-banner">
@@ -20,7 +23,11 @@ export default function AllahNames() {
         Discover the 99 Names of Allah ﷻ and Their Divine Attributes
       </p>
       <div className="bismillah-container-new">
-        <img src={bismillah} alt="bismillah" className="bismillah-new" />
+        <img
+          src={bismillah}
+          alt="bismillah"
+          className={theme ? "bismillah-dark" : "bismillah"}
+        />
       </div>
       <div className="names-cont">
         {Names.map((n, index) => (

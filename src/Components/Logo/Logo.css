@@ -26,7 +26,8 @@
   margin-left: 0.5rem;
 }
 .main-logo-app,
-.main-logo-sidebar {
+.main-logo-sidebar,
+.main-logo-sidebar-dark {
   width: 2rem;
   height: 2rem;
   object-fit: contain;
@@ -37,8 +38,18 @@
 .main-logo-sidebar {
   margin-right: 0.5rem;
 }
+.main-logo-sidebar-dark {
+  margin-right: 0.5rem;
+  filter: invert(1);
+}
 .theme-icon {
   height: 1.5rem;
   width: 1.5rem;
   object-fit: contain;
+}
+.theme-icon-dark {
+  height: 1.5rem;
+  width: 1.5rem;
+  object-fit: contain;
+  filter: invert(1);
 }

@@ -11,8 +11,11 @@ import Purify from "./Purify";
 import move from "../../../../assets/move.png";
 import { PurifcationBannerData } from "../../../Banner/BannerData";
 import Banner from "../../../Banner/Banner";
+import { useTheme } from "../../../../Context/ThemeContext";
 
 export default function Purification() {
+  const { theme } = useTheme();
+
   const [methodActive, setMethodActive] = useState("");
 
   const purificationsMethod = [
@@ -69,7 +72,9 @@ export default function Purification() {
                 <img
                   src={move}
                   alt="icon"
-                  className={isActive ? "side-icon" : "below-icon"}
+                  className={`${isActive ? "side-icon" : "below-icon"} ${
+                    theme ? "icon-dark" : "icon-light"
+                  } `}
                 />
               </div>
               {isActive && <Purify purifyData={method.data} />}

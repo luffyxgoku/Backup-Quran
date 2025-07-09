@@ -21,6 +21,12 @@
   width: 1.4rem;
   object-fit: contain;
 }
+.prayer-icon-dark {
+  height: 1.4rem;
+  width: 1.4rem;
+  object-fit: contain;
+  filter: invert(1);
+}
 .singleprayertime-container {
   /* margin-bottom: 5rem; */
   margin-bottom: 2rem;
@@ -63,6 +69,12 @@
   height: 80%;
   width: 80%;
   object-fit: contain;
+}
+.prayertime-img-dark {
+  height: 80%;
+  width: 80%;
+  object-fit: contain;
+  filter: invert(1);
 }
 .column1 {
   display: flex;
@@ -168,16 +180,22 @@
   font-size: 0.9rem;
   color: var(--text-black-white);
 }
-.below-icon {
-  height: 0.8rem;
-  width: 0.8rem;
-  object-fit: contain;
-}
+.below-icon,
 .side-icon {
   height: 0.8rem;
   width: 0.8rem;
   object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.side-icon {
   transform: rotate(90deg);
+}
+.icon-dark {
+  filter: invert(1);
+}
+.icon-light {
+  filter: none;
 }
 .purify-tilte {
   margin-left: 1rem;
