@@ -27,7 +27,8 @@
 .explore-text,
 .show-all-text,
 .reuse-main-text,
-.reuse-sub-text {
+.reuse-sub-text,
+.showmore-text {
   padding: 0;
   margin: 0;
 }
@@ -74,4 +75,14 @@
 .reuse-main-text {
   font-size: 1rem;
   color: var(--text-black-white);
+}
+.showmore-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.showmore-text {
+  font-size: 0.9rem;
+  color: var(--text-black-white);
+  margin-bottom: 1.5rem;
 }

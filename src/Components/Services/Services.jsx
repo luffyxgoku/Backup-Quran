@@ -37,6 +37,11 @@ export default function Services() {
           )
         )}
       </div>
+      <div className="showmore-cont">
+        <p className="showmore-text" onClick={toggleShowAll}>
+          {showAll ? "Show Less" : "Show All"}
+        </p>
+      </div>
     </>
   );
 }
