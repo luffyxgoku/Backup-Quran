@@ -12,8 +12,10 @@ import {
   columnData5,
   columnData8,
 } from "./DATA/ColumnData";
+import { useTheme } from "../../Context/ThemeContext";
 
 export default function Sidebar({ setIsSidebarOpen }) {
+  const { theme } = useTheme();
   return (
     <>
       <div
@@ -31,7 +33,7 @@ export default function Sidebar({ setIsSidebarOpen }) {
           <img
             src={sidebarImg}
             alt="banner"
-            className="sidebar-banner"
+            className={theme ? "sidebar-banner-dark" : "sidebar-banner"}
             loading="lazy"
           />
         </div>

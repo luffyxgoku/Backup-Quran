@@ -27,6 +27,12 @@
   height: 100%;
   object-fit: cover;
 }
+.sidebar-banner-dark {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: invert(1);
+}
 .column-contents {
   padding: 0;
   margin: 0;

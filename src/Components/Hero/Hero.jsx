@@ -4,8 +4,10 @@ import mapMarker from "../../assets/mapPin.png";
 import "./Hero.css";
 import { useFetch } from "../../Hooks/useFetch";
 import axios from "axios";
+import { useTheme } from "../../Context/ThemeContext";
 
 export default function Hero() {
+  const { theme } = useTheme();
   const API_TOKEN = import.meta.env.VITE_API_TOKEN;
   const timeRef = useRef(null);
 
@@ -133,7 +135,11 @@ export default function Hero() {
 
   return (
     <div className="hero-container">
-      <img src={heroImage} alt="hero-img" className="heroImage" />
+      <img
+        src={heroImage}
+        alt="hero-img"
+        className={theme ? "heroImage-dark" : "heroImage"}
+      />
       <div className="location-container">
         <div className="locate">
           <img src={mapMarker} alt="location-icon" className="location-icon" />
