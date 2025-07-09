@@ -21,6 +21,10 @@
   --card-bg-skintowhite: rgba(253, 243, 232, 255);
   --mecca-info-bg: rgba(253, 237, 220, 255);
   --translit-bg: rgba(120, 85, 70, 255);
+  --white-black: white;
+  --random-yellowtowhite: rgba(253, 243, 232, 255);
+  --yellow-white: rgb(191, 163, 20);
+  --share-btnbg: rgb(191, 163, 20);
 }
 body.dark-mode {
   --bg-color: black;
@@ -45,6 +49,10 @@ body.dark-mode {
   --card-bg-skintowhite: rgba(62, 61, 61, 0.584);
   --mecca-info-bg: black;
   --translit-bg: rgba(62, 61, 61, 0.584);
+  --white-black: rgba(62, 61, 61, 0.584);
+  --random-yellowtowhite: white;
+  --yellow-white: white;
+  --share-btnbg: #50554c;
 }
 
 body {

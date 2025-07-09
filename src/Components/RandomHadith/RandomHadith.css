@@ -8,7 +8,7 @@
 
 .randomhadith-main-cont {
   background-color: rgb(0, 0, 0);
-  border: 0.5px solid silver;
+  border: var(--worship-card-border);
   border-radius: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -35,17 +35,17 @@
 }
 .randomhadith-narr {
   font-size: 1rem;
-  color: var(--bg-color-yellow);
+  color: var(--random-yellowtowhite);
   font-weight: bold;
   text-align: center;
 }
 .randomhadith-english {
   font-size: 0.9rem;
   line-height: 1.5rem;
-  color: var(--yellow-text);
+  color: var(--yellow-white);
 }
 .readmore {
-  color: white;
+  color: var(--white-yellow);
   font-size: 0.9rem;
   margin-left: 0.5rem;
 }
@@ -57,8 +57,8 @@
 }
 .whatsapp-share-btn {
   text-decoration: none;
-  background-color: var(--yellow-text);
-  color: white;
+  background-color: var(--share-btnbg);
+  color: var(--text-black-white);
   width: 3.5rem;
   text-align: center;
   border-radius: 0.5rem;

@@ -11,6 +11,9 @@
   padding: 0;
   margin: 0;
 }
+.chap-name-title {
+  color: var(--text-black-white);
+}
 .hadith-main-heading {
   margin: 1rem;
   font-size: 1.1rem;
@@ -52,6 +55,9 @@
 .hadith-name {
   text-align: center;
   font-weight: bold;
+  color: var(--text-black-white);
+}
+.hadith-status {
   color: var(--text-black-white);
 }
 .hadiths-specific-chap-cont {
@@ -103,12 +109,13 @@
   object-fit: contain;
 }
 .hadith-bookname {
-  color: black;
+  color: var(--text-black-white);
 }
 .hadith-narrator {
   text-align: center;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
+  color: var(--text-black-white);
 }
 .hadith-arabic {
   font-family: "Amiri Quran";
@@ -116,11 +123,13 @@
   font-size: 1.5rem;
   line-height: 2.3;
   margin-bottom: 1.2rem;
+  color: var(--text-black-white);
 }
 .hadith-english {
   margin-bottom: 1rem;
   font-size: 1.1rem;
   line-height: 1.5rem;
+  color: var(--text-black-white);
 }
 .pagination-cont {
   display: flex;
@@ -143,7 +152,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 80%;
 }
 .single-searched-hadith {

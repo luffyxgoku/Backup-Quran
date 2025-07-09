@@ -4,7 +4,7 @@ import logo from "../../assets/q-1.png";
 import menu from "../../assets/menu.png";
 import Sidebar from "../Sidebar/Sidebar";
 import { useTheme } from "../../Context/ThemeContext";
-import sunIcon from "../../assets/sun.png";
+import sunIcon from "../../assets/lightdark.png";
 import moonIcon from "../../assets/night.png";
 
 export default function Logo() {
