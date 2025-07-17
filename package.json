@@ -10,13 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@google/genai": "^1.10.0",
     "axios": "^1.8.4",
     "framer-motion": "^12.7.3",
     "lottie-react": "^2.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-loading-skeleton": "^3.5.0",
-    "react-router-dom": "^7.4.0"
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.4.0",
+    "rehype-raw": "^7.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

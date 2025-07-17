@@ -35,6 +35,7 @@ import PopSurah from "./Components/PopSurah/PopSurah";
 import Notfound from "./Components/Notfound/Notfound";
 import Footer from "./Components/Footer/Footer";
 import { useTheme } from "./Context/ThemeContext";
+import Assistant from "./Components/Assistant/Assistant";
 
 function App() {
   const { theme } = useTheme();
@@ -87,6 +88,9 @@ function App() {
               path="/afterlife/:perticularAfterlife"
               element={<PerticularAfterWorld />}
             />
+
+            <Route path="/quran/assistant" element={<Assistant />} />
+
             <Route path="*" element={<Notfound />} />
           </Routes>
 
