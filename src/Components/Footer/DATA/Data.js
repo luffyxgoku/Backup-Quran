@@ -7,6 +7,7 @@ export const columnOne = [
     title: "About",
     location: "/about",
   },
+
   {
     title: "Quran",
     location: "/quran",
@@ -49,6 +50,10 @@ export const columnTwo = [
   {
     title: "Jannah",
     location: "afterlife/jannah",
+  },
+  {
+    title: "AI Assistant",
+    location: "/assistant",
   },
 ];
 

@@ -7,6 +7,11 @@ export const columnData7 = [
     name: "About",
     location: "/about",
   },
+  ,
+  {
+    name: "AI Assistant",
+    location: "/assistant",
+  },
 ];
 export const columnData2 = [
   {

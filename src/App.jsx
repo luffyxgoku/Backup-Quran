@@ -89,7 +89,7 @@ function App() {
               element={<PerticularAfterWorld />}
             />
 
-            <Route path="/quran/assistant" element={<Assistant />} />
+            <Route path="/assistant" element={<Assistant />} />
 
             <Route path="*" element={<Notfound />} />
           </Routes>

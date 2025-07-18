@@ -6,6 +6,8 @@ import sajdah from "../../assets/salah.png";
 import sajdahActive from "../../assets/salah-active.png";
 import about from "../../assets/about.png";
 import aboutActive from "../../assets/about-active.png";
+import assistant from "../../assets/aiD.png";
+import assistantActive from "../../assets/aiL.png";
 
 export const NavElement = [
   {
@@ -26,10 +28,16 @@ export const NavElement = [
     menuName: "Prayer",
     path: "prayer",
   },
+  // {
+  //   imgSource: about,
+  //   activeImgSource: aboutActive,
+  //   menuName: "About",
+  //   path: "about",
+  // },
   {
-    imgSource: about,
-    activeImgSource: aboutActive,
-    menuName: "About",
-    path: "about",
+    imgSource: assistant,
+    activeImgSource: assistantActive,
+    menuName: "AI Assistant",
+    path: "assistant",
   },
 ];

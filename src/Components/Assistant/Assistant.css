@@ -1,3 +1,9 @@
+.assistant-wrapper {
+  padding-bottom: 5rem; /* ensures input won't hide behind footer */
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
 .chat-container {
   width: 90%;
   max-width: 700px;
@@ -5,7 +11,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  padding-bottom: 5rem; /* space for input at bottom */
+  padding-bottom: 6rem; /* space for fixed input */
 }
 
 .message {
@@ -35,24 +41,13 @@
   padding: 10px;
 }
 
-.message p {
-  margin: 0;
-}
-
-.message code {
-  background-color: #b2ebf2;
-  padding: 0.1rem 0.3rem;
-  border-radius: 0.25rem;
-  font-family: monospace;
-  color: #01579b;
-}
-
+.message code,
 .message pre {
   background-color: #b2ebf2;
-  padding: 0.75rem;
-  border-radius: 0.5rem;
-  overflow-x: auto;
   color: #01579b;
+  padding: 0.3rem;
+  border-radius: 0.25rem;
+  font-family: monospace;
 }
 
 .input-container {
@@ -68,7 +63,8 @@
   border: 1px solid black;
   padding-right: 2.5rem;
   border-radius: 5px;
-  overflow: hidden;
+  background-color: white;
+  z-index: 1000;
 }
 
 .prompt-input {
