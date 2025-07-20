@@ -68,7 +68,8 @@
 }
 .hadith-details-cont {
   margin-top: 1rem;
-  background-color: rgba(120, 85, 70, 255);
+  background-color: var(--quran-nav);
+  border: var(--banner-border);
   color: white;
   border-radius: 1rem;
   padding: 1rem 0.5rem;
@@ -86,7 +87,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--worship-card-bg);
+  /* background-color: var(--worship-card-bg); */
+  background-color: var(--card-bg-skintowhite);
   border: var(--worship-card-border);
   border-radius: 0.4rem;
   margin-bottom: 1rem;
@@ -104,11 +106,23 @@
   gap: 0.5rem;
   margin-right: 0.5rem;
 }
-.ref-icon {
+/* .ref-icon {
   width: 1.6rem;
   height: 1.6rem;
   object-fit: contain;
+} */
+.share-img {
+  height: 1.5rem;
+  width: 1.5rem;
+  object-fit: contain;
 }
+.share-img-dark {
+  height: 1.5rem;
+  width: 1.5rem;
+  object-fit: contain;
+  filter: invert(1);
+}
+
 .hadith-bookname {
   color: var(--text-black-white);
 }

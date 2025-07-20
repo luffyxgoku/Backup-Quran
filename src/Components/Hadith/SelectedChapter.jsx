@@ -3,8 +3,11 @@ import { useLocation, useParams } from "react-router-dom";
 import axios from "axios";
 import ribbon from "../../assets/ribbon.png";
 import copy from "../../assets/copy.png";
+import { useTheme } from "../../Context/ThemeContext";
 
 export default function SelectedChapter() {
+  const { theme } = useTheme();
+
   const { hadithBooks, chapterName } = useParams();
   const location = useLocation();
   const { chapterNumber } = location.state || {};
@@ -66,11 +69,15 @@ export default function SelectedChapter() {
               <p className="hadith-status">{hadith.status} Hadith</p>
             </div>
             <div className="hadith-ref-img-cont">
-              <img src={ribbon} alt="ribbon" className="ref-icon" />
+              <img
+                src={ribbon}
+                alt="ribbon"
+                className={theme ? "share-img-dark" : "share-img"}
+              />
               <img
                 src={copy}
                 alt="copy"
-                className="ref-icon"
+                className={theme ? "share-img-dark" : "share-img"}
                 onClick={() => handleCopy(hadith)}
               />
             </div>
