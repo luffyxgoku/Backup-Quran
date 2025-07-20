@@ -70,7 +70,7 @@ export default function Sidebar({ setIsSidebarOpen }) {
             rel="noopener noreferrer"
             className="share-side-a"
           >
-            Share QuranSpace via WhatsApp
+            Share Quran Companion via WhatsApp
           </a>
         </div>
       </motion.div>

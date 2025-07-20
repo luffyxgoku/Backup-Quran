@@ -99,7 +99,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           className="share-footer-a"
         >
-          Share QuranSpace via WhatsApp
+          Share Quran Companion via WhatsApp
         </a>
       </div>
       <div className="footer-bottom-bar">
