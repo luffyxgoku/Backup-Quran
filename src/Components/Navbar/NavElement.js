@@ -37,7 +37,7 @@ export const NavElement = [
   {
     imgSource: assistant,
     activeImgSource: assistantActive,
-    menuName: "AI Assistant",
+    menuName: "AI",
     path: "assistant",
   },
 ];

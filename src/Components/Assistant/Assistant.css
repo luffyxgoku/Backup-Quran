@@ -1,88 +1,77 @@
-.assistant-wrapper {
-  padding-bottom: 5rem; /* ensures input won't hide behind footer */
-  min-height: 100vh;
-  background: #f8f9fa;
-}
-
-.chat-container {
-  width: 90%;
-  max-width: 700px;
-  margin: 1rem auto;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  padding-bottom: 6rem; /* space for fixed input */
+.assistant-container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding-bottom: 11rem;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 .message {
-  max-width: 85%;
-  border-radius: 1rem;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  border-radius: 8px;
   line-height: 1.5;
+  word-break: break-word;
+  overflow-wrap: break-word;
   white-space: pre-wrap;
-  font-size: 0.95rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-.message.user {
-  align-self: flex-end;
-  background-color: #dcf8c6;
-  color: #000;
-  border-top-right-radius: 0;
-  padding: 10px;
-}
-
-.message.ai {
-  align-self: flex-start;
+.ai-message {
   background-color: #e0f7fa;
-  color: #000;
-  border-top-left-radius: 0;
-  padding: 10px;
+  color: #006064;
 }
 
-.message code,
-.message pre {
-  background-color: #b2ebf2;
-  color: #01579b;
-  padding: 0.3rem;
-  border-radius: 0.25rem;
-  font-family: monospace;
+.user-message {
+  background-color: #e8f5e9;
+  color: #1b5e20;
+  text-align: right;
 }
 
-.input-container {
-  width: 85%;
-  margin: 0 auto;
-  height: 3rem;
+.input-form {
   position: fixed;
-  bottom: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  border: 1px solid black;
-  padding-right: 2.5rem;
-  border-radius: 5px;
-  background-color: white;
-  z-index: 1000;
+  bottom: 4.5rem;
+  left: 1rem;
+  right: 1rem;
+  margin: 0 auto;
+  max-width: 800px;
+  z-index: 100;
 }
 
-.prompt-input {
+.textarea-wrapper {
+  position: relative;
   width: 100%;
-  height: 100%;
-  padding: 0 1rem;
-  border: none;
-  outline: none;
-  font-size: 1rem;
-  box-sizing: border-box;
 }
 
-.send-icon {
+.chat-textarea {
+  height: 6rem;
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+.send-btn {
   position: absolute;
-  right: 0.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 1.5rem;
-  width: 1.5rem;
+  right: 0.75rem;
+  bottom: 2.5rem;
+  background: none;
+  border: none;
+  padding: 0;
   cursor: pointer;
+}
+
+.send-btn img {
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
 }

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import send from "../../assets/move.png";
 import "./Assistant.css";
 import { GoogleGenAI } from "@google/genai";
@@ -51,39 +51,37 @@ export default function Assistant() {
     }
   };
 
-  return (
-    <div className="assistant-wrapper">
-      <div className="chat-container">
-        {messages.map((msg, index) => (
-          <div
-            key={index}
-            className={`message ${msg.sender === "user" ? "user" : "ai"}`}
-          >
-            <ReactMarkdown rehypePlugins={[rehypeRaw]}>
-              {msg.text}
-            </ReactMarkdown>
-          </div>
-        ))}
-      </div>
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    processPrompt(prompt);
+  };
 
-      <div className="input-container">
-        <input
-          type="text"
-          placeholder="Ask something..."
-          onChange={handleInputChange}
-          value={prompt}
-          className="prompt-input"
-          onKeyDown={(e) => {
-            if (e.key === "Enter") processPrompt(prompt);
-          }}
-        />
-        <img
-          onClick={() => processPrompt(prompt)}
-          className="send-icon"
-          src={send}
-          alt="send"
-        />
-      </div>
+  return (
+    <div className="assistant-container">
+      {messages.map((msg, index) => (
+        <div
+          key={index}
+          className={`message ${
+            msg.sender === "ai" ? "ai-message" : "user-message"
+          }`}
+        >
+          <ReactMarkdown rehypePlugins={[rehypeRaw]}>{msg.text}</ReactMarkdown>
+        </div>
+      ))}
+
+      <form className="input-form" onSubmit={handleSubmit}>
+        <div className="textarea-wrapper">
+          <textarea
+            className="chat-textarea"
+            value={prompt}
+            onChange={handleInputChange}
+            placeholder="Ask your question..."
+          />
+          <button type="submit" className="send-btn">
+            <img src={send} alt="Send" />
+          </button>
+        </div>
+      </form>
     </div>
   );
 }

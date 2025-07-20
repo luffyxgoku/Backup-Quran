@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import axios from "axios";
-import ribbon from "../../assets/bookmark.png";
+import ribbon from "../../assets/ribbon.png";
 import copy from "../../assets/copy.png";
 
 export default function SelectedChapter() {
