@@ -5,13 +5,12 @@
   padding-bottom: 11rem;
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
-  background-color: #f9f9f9;
   font-family: sans-serif;
   overflow-x: hidden;
 }
 
 .message {
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   padding: 0.6rem;
   border-radius: 8px;
   line-height: 1.5;
@@ -21,13 +20,13 @@
 }
 
 .ai-message {
-  background-color: #e0f7fa;
-  color: #006064;
+  color: var(--text-black-white);
 }
 
 .user-message {
-  background-color: #e8f5e9;
-  color: #1b5e20;
+  color: var(--text-black-white);
+  background-color: var(--ai-msg-inputbar);
+  border: var(--worship-card-border);
   text-align: right;
 }
 
@@ -58,6 +57,8 @@
   overflow-x: hidden;
   word-break: break-word;
   white-space: pre-wrap;
+  background-color: var(--white-black);
+  color: var(--text-black-white);
 }
 
 .send-btn {
@@ -70,7 +71,14 @@
   cursor: pointer;
 }
 
-.send-btn img {
+.ai-send-img-dark {
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+  filter: invert(1);
+}
+
+.ai-send-img {
   width: 1rem;
   height: 1rem;
   object-fit: contain;

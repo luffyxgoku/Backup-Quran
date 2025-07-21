@@ -209,7 +209,7 @@ function AppContent() {
         <Route path="*" element={<Notfound />} />
       </Routes>
 
-      <Navbar />
+      {location.pathname !== "/assistant" && <Navbar />}
       {location.pathname !== "/assistant" && <Footer />}
     </>
   );

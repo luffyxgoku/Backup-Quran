@@ -26,6 +26,10 @@
   --yellow-white: rgb(191, 163, 20);
   --share-btnbg: rgb(191, 163, 20);
   --white-silver: white;
+  --dua-mood-option-border: 0.5px solid black;
+  --ai-msg-inputbar: rgba(253, 243, 232, 255);
+  --black-silver: black;
+  --yellow-white: rgb(191, 163, 20);
 }
 body.dark-mode {
   --bg-color: black;
@@ -55,6 +59,10 @@ body.dark-mode {
   --yellow-white: white;
   --share-btnbg: #50554c;
   --white-silver: rgb(159, 159, 159);
+  --dua-mood-option-border: 0.8px dashed white;
+  --ai-msg-inputbar: rgba(62, 61, 61, 0.584);
+  --black-silver: rgb(159, 159, 159);
+  --yellow-white: white;
 }
 
 body {

@@ -8,6 +8,7 @@ import bannerImg7 from "../../assets/allah.png";
 import bannerImg8 from "../../assets/main-logo.png";
 import bannerImg9 from "../../assets/close.png";
 import bannerImg10 from "../../assets/sunnah.png";
+import bannerImg99 from "../../assets/aibanner.png";
 
 import recite from "../../assets/recite.png";
 import bath from "../../assets/bath.png";
@@ -21,54 +22,70 @@ import jumuahIcon from "../../assets/imam.png";
 
 export const BannerData = [
   {
+    heading: "Ask AI",
+    subheading: "Get instant answers powered by AI",
+    imgSrc: bannerImg99,
+    location: "/assistant",
+  },
+  {
     heading: "Pay Zakat Fitra",
     subheading: "Complete your Ramadan with Al-Quran",
     imgSrc: bannerImg1,
+    location: "/zakat",
   },
   {
     heading: "Do Dhikr",
     subheading: "Complete your Ramadan with Al-Quran",
     imgSrc: bannerImg2,
+    location: "/dhikr",
   },
   {
     heading: "Read Prophet stories",
     subheading: "Complete your Ramadan with Al-Quran",
     imgSrc: bannerImg3,
+    location: "/stories",
   },
   {
     heading: "Read Al-Qur’an",
     subheading: "Complete your Ramadan with Al-Quran",
     imgSrc: bannerImg4,
+    location: "/quran",
   },
   {
     heading: "Explore Hadith",
     subheading: "Complete your Ramadan with Al-Quran",
     imgSrc: bannerImg5,
+    location: "/hadith",
   },
   {
     heading: "Perform Prayer",
     subheading: "Complete your Ramadan with Al-Quran",
     imgSrc: bannerImg6,
+    location: "/prayer",
   },
   {
     heading: "99 Names of Allah",
     subheading: "Complete your Ramadan with Al-Quran",
     imgSrc: bannerImg7,
+    location: "/allah-names",
   },
   {
     heading: "Discover the History",
     subheading: "Complete your Ramadan with Al-Quran",
     imgSrc: bannerImg8,
+    location: "/history",
   },
   {
     heading: "Uncover the Myths",
     subheading: "Complete your Ramadan with Al-Quran",
     imgSrc: bannerImg9,
+    location: "/myths",
   },
   {
     heading: "Follow the Sunnah",
     subheading: "Complete your Ramadan with Al-Quran",
     imgSrc: bannerImg10,
+    location: "/sunnah",
   },
 ];
 

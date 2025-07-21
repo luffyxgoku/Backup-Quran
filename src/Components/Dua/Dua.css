@@ -63,14 +63,15 @@
   height: 2.2rem;
   border: 0.5px solid black;
   font-size: 0.9rem;
-  background-color: var(--text-brown-white);
+  background-color: rgba(120, 85, 70, 255);
   color: white;
   border-radius: 0.4rem;
 }
 
 .mood-button {
   height: 2.2rem;
-  border: 0.5px solid black;
+  border: var(--dua-mood-option-border);
+  color: var(--text-black-white);
   font-size: 0.9rem;
   background-color: transparent;
   border-radius: 0.4rem;

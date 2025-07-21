@@ -4,8 +4,11 @@ import "./Assistant.css";
 import { GoogleGenAI } from "@google/genai";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
+import { useTheme } from "../../Context/ThemeContext";
 
 export default function Assistant() {
+  const { theme } = useTheme();
+
   const [prompt, setPrompt] = useState("");
   const [messages, setMessages] = useState([
     {
@@ -75,10 +78,14 @@ export default function Assistant() {
             className="chat-textarea"
             value={prompt}
             onChange={handleInputChange}
-            placeholder="Ask your question..."
+            placeholder="Ask anything..."
           />
           <button type="submit" className="send-btn">
-            <img src={send} alt="Send" />
+            <img
+              src={send}
+              className={theme ? "ai-send-img-dark" : "ai-send-img"}
+              alt="Send"
+            />
           </button>
         </div>
       </form>

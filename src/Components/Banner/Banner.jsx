@@ -15,6 +15,8 @@ export default function Banner({ BannerData }) {
     return () => clearInterval(interval);
   }, []);
 
+  const currentBanner = BannerData[currIndex];
+
   return (
     <>
       {location.pathname === "/" && (
@@ -25,6 +27,7 @@ export default function Banner({ BannerData }) {
           imgSrc={BannerData[currIndex].imgSrc}
           heading={BannerData[currIndex].heading}
           subheading={BannerData[currIndex].subheading}
+          location={currentBanner.location}
         />
       </div>
     </>
