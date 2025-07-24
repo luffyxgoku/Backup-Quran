@@ -13,7 +13,7 @@
   margin-bottom: 0rem;
   padding: 0.6rem;
   border-radius: 8px;
-  line-height: 1.5;
+  line-height: 1.3;
   word-break: break-word;
   overflow-wrap: break-word;
   white-space: pre-wrap;
@@ -27,7 +27,6 @@
   color: var(--text-black-white);
   background-color: var(--ai-msg-inputbar);
   border: var(--worship-card-border);
-  text-align: right;
 }
 
 .input-form {
@@ -53,6 +52,7 @@
   border: 1px solid #ccc;
   resize: none;
   font-size: 0.9rem;
+  line-height: 1.2rem;
   box-sizing: border-box;
   overflow-x: hidden;
   word-break: break-word;
@@ -82,4 +82,50 @@
   width: 1rem;
   height: 1rem;
   object-fit: contain;
+}
+
+.intro-message {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.assistant-h2-intro {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+  color: rgb(191, 163, 20);
+  text-align: center;
+}
+
+.assistant-p-intro {
+  line-height: 1.3;
+  padding: 0;
+  margin: 0;
+  color: var(--text-black-white);
+  font-style: italic;
+}
+
+.example {
+  font-style: italic;
+  color: var(--darkgrey-lightgrey);
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.ai-home-div {
+  position: fixed;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ai-home-btn {
+  color: white;
+  background-color: #333;
+  border: 1px solid var(--text-black-white);
+  border-radius: 1rem;
+  font-size: 1rem;
+  padding: 0.4rem 1.5rem;
 }

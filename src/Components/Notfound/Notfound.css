@@ -1,17 +1,16 @@
 .not-found-container {
   text-align: center;
-  margin-top: 100px;
-  padding: 20px;
+  padding: 1rem;
 }
 
 .not-found-container h1 {
-  font-size: 48px;
+  font-size: 3rem;
   color: #ff4c4c;
 }
 
 .not-found-container p {
-  font-size: 20px;
-  margin: 20px 0;
+  font-size: 1.5rem;
+  color: var(--text-black-white);
 }
 
 .back-home-link {

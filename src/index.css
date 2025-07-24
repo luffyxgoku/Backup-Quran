@@ -30,6 +30,7 @@
   --ai-msg-inputbar: rgba(253, 243, 232, 255);
   --black-silver: black;
   --yellow-white: rgb(191, 163, 20);
+  --darkgrey-lightgrey: #555;
 }
 body.dark-mode {
   --bg-color: black;
@@ -63,6 +64,7 @@ body.dark-mode {
   --ai-msg-inputbar: rgba(62, 61, 61, 0.584);
   --black-silver: rgb(159, 159, 159);
   --yellow-white: white;
+  --darkgrey-lightgrey: #858585;
 }
 
 body {
