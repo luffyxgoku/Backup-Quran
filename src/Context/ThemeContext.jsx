@@ -5,10 +5,16 @@ const ThemeContextValue = createContext();
 export const useTheme = () => useContext(ThemeContextValue);
 
 export default function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme === "true";
+  });
 
   const toggleTheme = () => {
-    setTheme((prev) => !prev);
+    setTheme((prev) => {
+      localStorage.setItem("theme", !prev);
+      return !prev;
+    });
   };
 
   useEffect(() => {

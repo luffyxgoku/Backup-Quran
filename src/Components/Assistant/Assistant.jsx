@@ -13,7 +13,9 @@ export default function Assistant() {
   const [messages, setMessages] = useState([
     {
       sender: "ai",
-      text: "👋 Hi there! I'm your Quran Assistant. Ask me anything about Islam, the Quran, Hadith, or general guidance.",
+      text: `As-salamu alaykum!
+I’m your Quran AI Assistant, powered by Google’s Gemini — here to help you explore the Qur’an, Hadith, Islamic guidance, and more. Ask me anything.
+Example: “Can you explain Surah Al-Fatiha and why it’s recited in every prayer?”`,
     },
   ]);
 
