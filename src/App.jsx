@@ -143,6 +143,7 @@ import Notfound from "./Components/Notfound/Notfound";
 import Footer from "./Components/Footer/Footer";
 import { useTheme } from "./Context/ThemeContext";
 import Assistant from "./Components/Assistant/Assistant";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   const { theme } = useTheme();
@@ -168,6 +169,8 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/assistant" element={<Assistant />} />
+
         <Route path="/quran" element={<Quran />} />
         <Route path="/quran/:chapterType/:id" element={<SpecifChapter />} />
         <Route
@@ -205,8 +208,8 @@ function AppContent() {
           path="/afterlife/:perticularAfterlife"
           element={<PerticularAfterWorld />}
         />
-        <Route path="/assistant" element={<Assistant />} />
         <Route path="*" element={<Notfound />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
 
       {location.pathname !== "/assistant" && <Navbar />}

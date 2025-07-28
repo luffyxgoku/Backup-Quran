@@ -24,6 +24,10 @@ export const columnOne = [
     title: "Zakat",
     location: "/zakat",
   },
+  {
+    title: "Contact Us",
+    location: "/contact",
+  },
 ];
 
 export const columnTwo = [

@@ -7,7 +7,10 @@ export const columnData7 = [
     name: "About",
     location: "/about",
   },
-  ,
+  {
+    name: "Contact Us",
+    location: "/contact",
+  },
   {
     name: "AI Assistant",
     location: "/assistant",

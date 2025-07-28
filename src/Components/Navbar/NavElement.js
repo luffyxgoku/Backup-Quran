@@ -8,6 +8,8 @@ import about from "../../assets/about.png";
 import aboutActive from "../../assets/about-active.png";
 import assistant from "../../assets/aiD.png";
 import assistantActive from "../../assets/aiL.png";
+import contactActive from "../../assets/contact.png";
+import contact from "../../assets/contactActive.png";
 
 export const NavElement = [
   {
@@ -39,5 +41,11 @@ export const NavElement = [
     activeImgSource: assistantActive,
     menuName: "AI",
     path: "assistant",
+  },
+  {
+    imgSource: contact,
+    activeImgSource: contactActive,
+    menuName: "Contact",
+    path: "contact",
   },
 ];

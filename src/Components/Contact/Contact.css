@@ -1,0 +1,83 @@
+.contact-title,
+.contact-description,
+.form-status-message {
+  padding: 0;
+  margin: 0;
+}
+.contact-page-container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-header-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contact-title {
+  font-size: 1.3rem;
+  color: var(--yellow-text);
+}
+.contact-description {
+  font-size: 0.9rem;
+  color: var(--text-black-white);
+}
+
+.contact-form-section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  background-color: red;
+  background-color: var(--ai-msg-inputbar);
+  border: var(--worship-card-border);
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.form-label {
+  font-size: 0.9rem;
+  color: var(--text-black-white);
+}
+.form-input {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.form-textarea {
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  transition: border-color 0.2s ease;
+}
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: rgb(191, 163, 20);
+}
+.form-submit-button {
+  background-color: rgb(191, 163, 20);
+  color: white;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+}
+.form-status-message {
+  font-size: 1.1rem;
+  text-align: center;
+  color: rgb(243, 199, 2);
+}
