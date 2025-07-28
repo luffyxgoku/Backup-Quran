@@ -21,6 +21,7 @@
 .contact-title {
   font-size: 1.3rem;
   color: var(--yellow-text);
+  text-align: center;
 }
 .contact-description {
   font-size: 0.9rem;

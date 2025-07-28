@@ -53,7 +53,7 @@ export default function Contact() {
   return (
     <div className="contact-page-container">
       <div className="contact-header-section">
-        <h1 className="contact-title">Contact Us!</h1>
+        <p className="contact-title">Contact Us</p>
         <p className="contact-description">
           Let us know what’s on your mind — be it feedback, suggestions, or
           anything else. We appreciate your thoughts!

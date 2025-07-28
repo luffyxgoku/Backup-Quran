@@ -94,8 +94,8 @@
 .assistant-h2-intro {
   margin: 0;
   padding: 0;
-  font-size: 1.4rem;
-  color: rgb(191, 163, 20);
+  font-size: 1.3rem;
+  color: var(--yellow-text);
   text-align: center;
 }
 
@@ -123,9 +123,13 @@
 }
 .ai-home-btn {
   color: white;
-  background-color: #333;
-  border: 1px solid var(--text-black-white);
+  /* background-color: #333; */
+  background-color: rgb(191, 163, 20);
+  border: none;
+
+  /* border: 1px solid var(--text-black-white); */
   border-radius: 1rem;
   font-size: 1rem;
-  padding: 0.4rem 1.5rem;
+  /* padding: 0.4rem 1.5rem; */
+  padding: 0.5rem 1.5rem;
 }
