@@ -12,6 +12,10 @@ export const columnData7 = [
     location: "/contact",
   },
   {
+    name: "Charity",
+    location: "/charity",
+  },
+  {
     name: "AI Assistant",
     location: "/assistant",
   },

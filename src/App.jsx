@@ -144,6 +144,7 @@ import Footer from "./Components/Footer/Footer";
 import { useTheme } from "./Context/ThemeContext";
 import Assistant from "./Components/Assistant/Assistant";
 import Contact from "./Components/Contact/Contact";
+import Charity from "./Components/Charity/Charity";
 
 function App() {
   const { theme } = useTheme();
@@ -210,6 +211,7 @@ function AppContent() {
         />
         <Route path="*" element={<Notfound />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/charity" element={<Charity />} />
       </Routes>
 
       {location.pathname !== "/assistant" && <Navbar />}

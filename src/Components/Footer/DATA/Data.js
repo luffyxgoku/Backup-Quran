@@ -86,4 +86,8 @@ export const columnThree = [
     title: "Caliphs",
     location: "history/caliph",
   },
+  {
+    title: "Charity",
+    location: "charity",
+  },
 ];
