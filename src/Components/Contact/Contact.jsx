@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import "./contact.css";
+import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { AnimatePresence, motion } from "framer-motion";
 
