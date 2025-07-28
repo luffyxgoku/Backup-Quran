@@ -39,13 +39,13 @@ export default function Contact() {
           setStatus("Message Sent Successfully");
           setTimeout(() => {
             setStatus("");
-          }, 5000);
+          }, 7000);
         },
         (error) => {
           setStatus("Message Failed");
           setTimeout(() => {
             setStatus("");
-          }, 5000);
+          }, 7000);
         }
       );
   };
@@ -120,10 +120,10 @@ export default function Contact() {
         {status && (
           <motion.p
             className="form-status-message"
-            initial={{ opacity: 0, x: -40 }}
+            initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 40 }}
-            transition={{ duration: 1.2, ease: "easeInOut" }}
+            exit={{ opacity: 0, x: 50 }}
+            transition={{ duration: 1.8, ease: "easeInOut" }}
           >
             {status}
           </motion.p>
