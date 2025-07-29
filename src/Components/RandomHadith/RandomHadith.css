@@ -57,10 +57,14 @@
 }
 .whatsapp-share-btn {
   text-decoration: none;
-  background-color: var(--share-btnbg);
-  color: var(--text-black-white);
-  width: 3.5rem;
+  /* background-color: var(--share-btnbg);
+  color: var(--text-black-white); */
+  /* width: 3.5rem; */
   text-align: center;
   border-radius: 0.5rem;
   font-size: 0.9rem;
+  background-color: rgb(191, 163, 20);
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border: none;
 }

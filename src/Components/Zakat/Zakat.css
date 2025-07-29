@@ -52,16 +52,21 @@
   font-size: 0.9rem;
   border-radius: 0.3rem;
   color: var(--text-black-white);
+  transition: border-color 0.2s ease;
+}
+
+.zakat-input:focus {
+  outline: none;
+  border-color: rgb(191, 163, 20);
 }
 
 .zakat-submit-button {
-  padding: 0.3rem;
-  background-color: rgba(120, 85, 70, 255);
+  background-color: rgb(191, 163, 20);
   color: white;
+  padding: 0.6rem 0.4rem;
+  border-radius: 0.5rem;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 
 .zakat-result {
