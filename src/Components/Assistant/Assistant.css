@@ -72,15 +72,15 @@
 }
 
 .ai-send-img-dark {
-  width: 1rem;
-  height: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
   object-fit: contain;
   filter: invert(1);
 }
 
 .ai-send-img {
-  width: 1rem;
-  height: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
   object-fit: contain;
 }
 

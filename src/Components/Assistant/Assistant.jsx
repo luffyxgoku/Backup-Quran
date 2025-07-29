@@ -1,5 +1,5 @@
 import { useState } from "react";
-import send from "../../assets/move.png";
+import send from "../../assets/aisendlight.png";
 import "./Assistant.css";
 import { GoogleGenAI } from "@google/genai";
 import ReactMarkdown from "react-markdown";
