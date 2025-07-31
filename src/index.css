@@ -31,6 +31,7 @@
   --black-silver: black;
   --yellow-white: rgb(191, 163, 20);
   --darkgrey-lightgrey: #555;
+  --border-footer: 0.5px solid rgba(62, 61, 61, 0.184);
 }
 body.dark-mode {
   --bg-color: black;
@@ -65,6 +66,7 @@ body.dark-mode {
   --black-silver: rgb(159, 159, 159);
   --yellow-white: white;
   --darkgrey-lightgrey: #858585;
+  --border-footer: 1px solid #ffffff50;
 }
 
 body {
