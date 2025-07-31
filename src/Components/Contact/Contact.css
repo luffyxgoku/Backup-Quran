@@ -34,7 +34,6 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-radius: 1rem;
-  background-color: red;
   background-color: var(--ai-msg-inputbar);
   border: var(--worship-card-border);
 }

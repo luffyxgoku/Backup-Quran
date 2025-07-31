@@ -1,4 +1,4 @@
-.about-title,
+/* .about-title,
 .about-text,
 .about-heading,
 .feature-title,
@@ -30,7 +30,6 @@
 .about-sec-cont {
   margin-left: 1rem;
   margin-right: 1rem;
-  /* margin-bottom: 4.5rem; */
   margin-bottom: 2rem;
 
   color: rgb(200, 199, 199);
@@ -92,4 +91,38 @@
 
 .about-list-item {
   font-size: 0.9rem;
+} */
+
+.about-title-main,
+.about-text {
+  padding: 0;
+  margin: 0;
+}
+.about-sec-cont {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.about-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  background-color: var(--ai-msg-inputbar);
+  border: var(--worship-card-border);
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+}
+.about-title-main {
+  font-size: 1.4rem;
+  color: var(--yellow-text);
+}
+.about-text {
+  color: var(--text-black-white);
+  font-size: 0.9rem;
+  word-spacing: 1px;
+  line-height: 1.4;
 }

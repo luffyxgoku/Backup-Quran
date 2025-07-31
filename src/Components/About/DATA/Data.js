@@ -1,182 +1,26 @@
-export const aboutOne = [
+export const aboutData = [
   {
-    title: `Welcome to Quran Companion`,
-    desc: `Quran Companion is a thoughtfully designed Islamic web application created to help you connect more deeply with your faith. This mobile-friendly platform brings together essential aspects of Islam in one accessible place, whether you're seeking knowledge, inspiration, or daily spiritual support. Built with simplicity, clarity, and ease of use in mind, Quran Companion aims to seamlessly integrate Islamic teachings into your everyday routine. Whether you're at home, at work, or on the go, this app is here to guide and support your journey through the beauty, wisdom, and depth of Islam.`,
+    title: "About Quran Companion",
+    desc: `Quran Companion is a thoughtfully designed Islamic web application aimed at helping users deepen their understanding and connection with Islam. Whether you're new to Islamic teachings or a lifelong learner, this platform offers a clean and intuitive interface that makes essential resources easily accessible. From Qur’an recitation to exploring daily du’as, the app is built to support spiritual growth, reflection, and learning for users of all ages. With a strong emphasis on simplicity, accessibility, and authenticity, Quran Companion brings a modern solution to engaging with timeless Islamic knowledge.`,
   },
-];
-
-export const aboutTwo = [
   {
-    heading: `Key Features`,
-    feature: [
-      {
-        title: `Al-Qur’an – Read & Listen`,
-        desc: `Access the Holy Qur’an with clear Arabic text and audio recitations to help you recite and reflect.`,
-      },
-      {
-        title: `Zakat – Fitrah & Maal`,
-        desc: `Understand and calculate your Zakat with clarity through visual guides and information.`,
-      },
-      {
-        title: `Du’a – Pray to Allah`,
-        desc: `Explore a wide collection of powerful supplications (du’as) for every situation in life.`,
-      },
-      {
-        title: `Dhikr – Prayer Beads`,
-        desc: `Engage in the remembrance of Allah with a digital tasbeeh counter for easy dhikr anytime, anywhere.`,
-      },
-      {
-        title: `Prophet Stories – Read & Learn`,
-        desc: `Dive into authentic stories of the Prophets to learn valuable life lessons and grow in faith.`,
-      },
-      {
-        title: `Hadith – Read & Learn`,
-        desc: `Read through selected Hadiths sourced from authentic collections to strengthen your understanding.`,
-      },
-      {
-        title: `Allah’s 99 Names`,
-        desc: `Explore and reflect upon the beautiful names and attributes of Allah (Asma’ul Husna) with meanings and explanations.`,
-      },
-      {
-        title: `Islamic History – Timeless Past Events`,
-        desc: `Discover major events in Islamic history that shaped the ummah.`,
-      },
-      {
-        title: `Sunnah – Path of the Prophet ﷺ`,
-        desc: `Learn the everyday practices of Prophet Muhammad ﷺ and how to implement them.`,
-      },
-      {
-        title: `Myths & Media`,
-        desc: `Explore common myths and media misrepresentations and learn the Islamic viewpoint.`,
-      },
-      {
-        title: `Essence of Islam`,
-        desc: `Understand the foundational beliefs and practices of Islam, including: Faith (Iman), Salah (Prayer), Hajj (Pilgrimage), Sawm (Fasting), Zakat (Charity), Jihad (Struggle for righteousness)`,
-      },
-      {
-        title: `Afterlife Concepts`,
-        desc: `Glimpse of Jannah – Eternal paradise of peace and joy.Glimpse of Jahannum – A place of suffering for those who turn away from truth.Life in Barzakh – The waiting stage between death and resurrection.`,
-      },
-      {
-        title: `Prayer Section`,
-        desc: `Accurate Prayer Times & detailed Rakat breakdown.Four KalimaPurification essentials before prayer.Primary concerns of prayerStep-by-step guide on how to perform prayersImportant Duas related to prayer.Funeral Prayer guidance.`,
-      },
-      {
-        title: `Random Hadiths`,
-        desc: `Receive a new authentic Hadith to inspire, remind, and strengthen your connection with the teachings of Prophet Muhammad ﷺ.`,
-      },
-    ],
+    title: "What It Offers",
+    desc: `Quran Companion features a wide range of tools and sections to enhance your daily Islamic journey. You can read and listen to the Holy Qur’an in clear Arabic text with audio recitation. Access a rich library of du’as for every occasion, explore Hadith and inspiring stories of the Prophets, and study the 99 beautiful names of Allah (Asma’ul Husna) with their meanings and explanations. The Zakat and prayer sections provide step-by-step guidance for calculation and worship. You'll also find an overview of essential Islamic beliefs, history, and afterlife concepts, all curated in an engaging and easy-to-navigate format.`,
   },
-];
-
-// export const aboutTwo = [
-//   {
-//     heading: `Key Features`,
-//     feature: [
-//       {
-//         title: `Al-Qur’an – Read & Listen`,
-//         desc: `Read and listen to the Holy Qur’an with ease.`,
-//       },
-//       {
-//         title: `Zakat – Fitrah & Maal`,
-//         desc: `Understand and calculate your Zakat easily.`,
-//       },
-//       {
-//         title: `Du’a – Pray to Allah`,
-//         desc: `Find powerful du’as for every situation.`,
-//       },
-//       {
-//         title: `Dhikr – Prayer Beads`,
-//         desc: `Use a digital tasbeeh for daily dhikr.`,
-//       },
-//       {
-//         title: `Prophet Stories – Read & Learn`,
-//         desc: `Read inspiring stories of the Prophets.`,
-//       },
-//       {
-//         title: `Hadith – Read & Learn`,
-//         desc: `Explore authentic Hadith collections.`,
-//       },
-//       {
-//         title: `Allah’s 99 Names`,
-//         desc: `Learn the beautiful names of Allah.`,
-//       },
-//       {
-//         title: `Islamic History – Timeless Past Events`,
-//         desc: `Discover key events in Islamic history.`,
-//       },
-//       {
-//         title: `Sunnah – Path of the Prophet ﷺ`,
-//         desc: `Follow the daily practices of the Prophet ﷺ.`,
-//       },
-//       {
-//         title: `Myths & Media`,
-//         desc: `Uncover truths behind common myths.`,
-//       },
-//       {
-//         title: `Essence of Islam`,
-//         desc: `Understand the core beliefs of Islam.`,
-//       },
-//       {
-//         title: `Afterlife Concepts`,
-//         desc: `Learn about Jannah, Jahannum, and Barzakh.`,
-//       },
-//       {
-//         title: `Prayer Section`,
-//         desc: `Guide to prayer times, rakats, and duas.`,
-//       },
-//       {
-//         title: `Random Hadiths`,
-//         desc: `Get a new Hadith to reflect on daily.`,
-//       },
-//     ],
-//   },
-// ];
-
-export const aboutThree = [
   {
-    title: ` Note on Accuracy and Content Integrity`,
-    desc: `While the Qur’an and Hadith sections are sourced from authenticated APIs to ensure accuracy, other content on this platform has been manually compiled and may contain unintentional errors or incomplete information. We sincerely ask for your understanding and forgiveness for any inaccuracies and warmly welcome your feedback or corrections to help us improve and maintain the integrity of this platform.`,
+    title: "Smart Features for a Seamless Experience",
+    desc: `Beyond content, Quran Companion is equipped with smart features to make your usage smooth and productive. It includes a live AI-powered search tool that allows you to quickly find answers to Islamic questions or navigate sections of the app in real time. There's also a contact form where users can reach out to us directly for support, suggestions, or feedback. To accommodate different user preferences, the app supports both dark and light themes, allowing you to personalize the look and feel of the interface. Everything is optimized for mobile and desktop use, ensuring a responsive experience across all devices.`,
   },
-];
-
-export const aboutFour = [
   {
-    title: `Development and Vision`,
-    desc: `This app is created by two passionate developers, Sami and Shadman, driven by a shared vision to make authentic Islamic knowledge more accessible, engaging, and practical for everyone, especially the younger generation.`,
-    points: [
-      {
-        point: `Built entirely with React.js, the app currently operates as a frontend-only web application, optimized for mobile users to provide a smooth and intuitive experience on smartphones and tablets.`,
-      },
-      {
-        point: `A desktop-optimized version is in the planning stages and is expected in future releases, aiming to deliver an equally refined experience across all devices.`,
-      },
-      {
-        point: `The app is actively being developed, with many exciting updates on the horizon. We're working on new features, better content, and improvements to enhance your overall experience.`,
-      },
-    ],
+    title: "Note on Accuracy",
+    desc: `While many sections of the app, such as Qur’an and Hadith, are powered by authenticated sources and verified APIs, some parts of the content are manually written and compiled. As with any human effort, there may be occasional errors or omissions. We humbly ask for your understanding and forgiveness for any inaccuracies you may come across. Your feedback is always welcome, and we encourage you to contact us if you spot anything that needs correction or improvement.`,
   },
-];
-
-export const aboutFive = [
   {
-    title: `Thank You for Using Quran Companion`,
-    desc: `We sincerely thank you for choosing Quran Companion. Our hope is that this app becomes a meaningful part of your daily routine and supports you in your journey toward deeper Islamic understanding, reflection, and spiritual growth. Whether you're just beginning to explore or continuing a lifelong path of learning, may this platform provide clarity, inspiration, and ease in accessing authentic Islamic knowledge.`,
+    title: "Developers",
+    desc: `Quran Companion was built by two dedicated developers, Sami and Shadman, who share a common goal of making authentic Islamic knowledge more accessible through technology. Sami worked on structuring the platform and integrating meaningful Islamic content in a way that's educational and easy to digest. Shadman led the frontend design and development, ensuring a smooth user experience with responsive layouts and a clean aesthetic. Together, they’ve combined their skills to create a platform that respects Islamic values while embracing modern usability standards.`,
   },
-];
-
-export const aboutSix = [
   {
-    title: `Meet the Developers`,
-    devs: [
-      {
-        name: `Sami`,
-        bio: `is a dedicated developer who focused on structuring and integrating meaningful Islamic content into the app. He worked closely on feature planning and development, ensuring clarity, authenticity, and functionality across the platform. Sami’s goal was to make Islamic learning accessible to all ages.`,
-      },
-      {
-        name: `Shadman`,
-        bio: `is a passionate frontend developer with a strong eye for design and user experience. He led the UI/UX implementation of Quran Companion, ensuring the app is clean, responsive, and easy to navigate. With a deep respect for Islamic values, Shadman focused on making the platform both visually engaging and spiritually enriching.`,
-      },
-    ],
+    title: "Thank You",
+    desc: `We sincerely thank you for using Quran Companion. Your support means a lot to us. Our hope is that this app serves as a meaningful companion on your spiritual journey—whether you're reading Qur’an at home, searching for a du’a on the go, or exploring the lives of the Prophets. We will continue working on updates, improvements, and new features based on your feedback. May this platform bring benefit to your life and help you stay connected with the beauty and depth of Islam.`,
   },
 ];

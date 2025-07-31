@@ -64,7 +64,7 @@ export default function Sidebar({ setIsSidebarOpen }) {
         <div className="share-side-c">
           <a
             href={`https://wa.me/?text=${encodeURIComponent(
-              "Check out this amazing Quran app: https://quran-space.netlify.app/"
+              "Check out the Quran Companion: https://quran-portal.netlify.app/"
             )}`}
             target="_blank"
             rel="noopener noreferrer"
