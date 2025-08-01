@@ -2,7 +2,7 @@
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   display: flex;
-  gap: 0.4rem;
+  /* gap: 0.4rem; */
   justify-content: space-between;
   align-items: center;
   position: sticky;
@@ -19,12 +19,19 @@
   font-size: 1.2rem;
   color: var(--text-black-white);
 }
-.logo {
+.logo-left-cont {
   display: flex;
   align-items: center;
   gap: 0.4rem;
   margin-left: 0.5rem;
 }
+.logo-right-cont {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-left: 0.5rem;
+}
+
 .main-logo-app,
 .main-logo-sidebar,
 .main-logo-sidebar-dark {
