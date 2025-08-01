@@ -1,5 +1,67 @@
-.charity-title {
+.charity-main-title,
+.charity-description,
+.charity-quran-verse,
+.donation-heading {
+  padding: 0;
+  margin: 0;
+}
+
+.charity-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+.charity-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.charity-main-title {
+  font-size: 1.3rem;
+  color: var(--yellow-text);
   text-align: center;
-  font-size: 2rem;
-  color: orangered;
+}
+.charity-description {
+  font-size: 0.9rem;
+  color: var(--text-black-white);
+}
+
+.charity-quran-verse {
+  font-family: "Nunito MediumItalic", sans-serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  text-align: center;
+  color: var(--text-black-white);
+}
+.charity-donation-section {
+  background-color: var(--ai-msg-inputbar);
+  border: var(--worship-card-border);
+  border-radius: 0.5rem;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.donation-heading {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--yellow-text);
+}
+.donation-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.donation-button {
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(191, 163, 20);
+  color: white;
+  border: none;
+  font-size: 0.9rem;
 }
