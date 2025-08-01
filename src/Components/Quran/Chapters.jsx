@@ -5,7 +5,6 @@ import play from "../../assets/play.png";
 import axios from "axios";
 import Lottie from "lottie-react";
 import loadingAnimation from "../../assets/animation.json";
-// import playdark from "../../assets/play-dark.png";
 
 import { useTheme } from "../../Context/ThemeContext";
 

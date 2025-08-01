@@ -1,3 +1,4 @@
+// your imports
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -6,26 +7,20 @@ import { juzzVerseCount } from "./DATA/JuzzVerseCount";
 import mecca from "../../assets/mecca.png";
 import madina from "../../assets/madina.png";
 import play from "../../assets/play.png";
-// import save from "../../assets/bookmark.png";
 import copy from "../../assets/copy.png";
 import bismillah from "../../assets/bismillah.png";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-// import copydark from "../../assets/copydark.png";
 import ribbon from "../../assets/ribbon.png";
-// import playdark from "../../assets/play-dark.png";
-
+import close from "../../assets/close.png";
 import { useTheme } from "../../Context/ThemeContext";
+import "./Quran.css";
 
 export default function SpecifChapter() {
   const { theme } = useTheme();
-
   const [loading, setLoading] = useState(false);
   const [isTranlationActive, setIsTranslationActive] = useState(true);
-  const [quranChapter, setQuranChapter] = useState({
-    english: [],
-    arabic: [],
-  });
+  const [quranChapter, setQuranChapter] = useState({ english: [], arabic: [] });
   const [quranInfo, setQuranInfo] = useState({
     englishName: "",
     arabicName: "",
@@ -33,6 +28,9 @@ export default function SpecifChapter() {
   });
   const { id } = useParams();
   const { chapterType } = useParams();
+
+  // audio player state
+  const [audioFileSrc, setAudioFileSrc] = useState("");
 
   useEffect(() => {
     const getChapterDetails = async () => {
@@ -57,6 +55,7 @@ export default function SpecifChapter() {
         setLoading(false);
       }
     };
+
     juzNames.includes(chapterType) ? getJuzzDetails() : getChapterDetails();
   }, [id]);
 
@@ -95,12 +94,8 @@ export default function SpecifChapter() {
     }
   };
 
-  const handleTranslation = () => {
-    setIsTranslationActive(true);
-  };
-  const handleReading = () => {
-    setIsTranslationActive(false);
-  };
+  const handleTranslation = () => setIsTranslationActive(true);
+  const handleReading = () => setIsTranslationActive(false);
 
   const handleShareToWhatsapp = (arabic, english, index) => {
     const chapterNum = `Chapter ${id}`;
@@ -111,11 +106,44 @@ export default function SpecifChapter() {
     window.open(whatsappUrl, "_blank");
   };
 
+  const playAudio = async (surahId, verseNumber) => {
+    try {
+      const ayahNumber = `${surahId}:${verseNumber}`;
+      const response = await axios.get(
+        `https://api.alquran.cloud/v1/ayah/${ayahNumber}/ar.alafasy`
+      );
+      const url = response.data.data.audio;
+      setAudioFileSrc(url);
+    } catch (err) {
+      console.error("Audio fetch error:", err);
+    }
+  };
+
   return (
     <>
+      {audioFileSrc && (
+        <div className="audio-container">
+          <img
+            onClick={() => setAudioFileSrc("")}
+            src={close}
+            alt="close"
+            className="close-img"
+          />
+          <audio
+            key={audioFileSrc}
+            id="quran-audio"
+            className="audio-tag"
+            controls
+            autoPlay
+          >
+            <source src={audioFileSrc} type="audio/mpeg" />
+          </audio>
+        </div>
+      )}
+
       {loading ? (
         <div className="skeleton-container">
-          <Skeleton string width={100} height={30} />
+          <Skeleton width={100} height={30} />
           <Skeleton height={40} />
           <Skeleton height={100} />
           <Skeleton height={50} count={3} style={{ marginTop: "5rem" }} />
@@ -127,6 +155,7 @@ export default function SpecifChapter() {
               quranInfo.arabicName || juzNames[id - 1]
             }`}</p>
           </div>
+
           <div className="quran-nav-container">
             <div
               className={
@@ -184,12 +213,10 @@ export default function SpecifChapter() {
           </div>
 
           <div className="all-verses-container">
-            {isTranlationActive && (
-              <div>
-                {quranChapter.arabic.map((arabicVerse, index) => {
+            {isTranlationActive
+              ? quranChapter.arabic.map((arabicVerse, index) => {
                   const specialPhrase =
                     "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ";
-
                   const startsWithBismillah =
                     arabicVerse.startsWith(specialPhrase);
                   const restOfVerse = startsWithBismillah
@@ -202,25 +229,17 @@ export default function SpecifChapter() {
                         <p className="number">{index + 1}</p>
                         <div className="share-container">
                           <img
-                            // src={theme ? playdark : play}
-                            // alt=""
-                            // className="share-img"
                             src={play}
                             alt="Play"
                             className={theme ? "share-img-dark" : "share-img"}
+                            onClick={() => playAudio(id, index + 1)}
                           />
                           <img
-                            // src={theme ? save : ribbon}
-                            // alt=""
-                            // className="share-img"
                             src={ribbon}
                             alt=""
                             className={theme ? "share-img-dark" : "share-img"}
                           />
                           <img
-                            // src={theme ? copydark : copy}
-                            // alt="copy"
-                            // className="share-img"
                             src={copy}
                             alt="copy"
                             className={theme ? "share-img-dark" : "share-img"}
@@ -244,7 +263,6 @@ export default function SpecifChapter() {
                           {restOfVerse && ` ${restOfVerse}`}
                         </p>
                       </div>
-
                       <div className="english-verse-container">
                         <p className="english-text">
                           {quranChapter.english[index]}
@@ -252,16 +270,10 @@ export default function SpecifChapter() {
                       </div>
                     </div>
                   );
-                })}
-              </div>
-            )}
-
-            {!isTranlationActive && (
-              <div>
-                {quranChapter.arabic.map((arabicVerse, index) => {
+                })
+              : quranChapter.arabic.map((arabicVerse, index) => {
                   const specialPhrase =
                     "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ";
-
                   const startsWithBismillah =
                     arabicVerse.startsWith(specialPhrase);
                   const restOfVerse = startsWithBismillah
@@ -288,8 +300,6 @@ export default function SpecifChapter() {
                     </div>
                   );
                 })}
-              </div>
-            )}
           </div>
         </>
       )}
