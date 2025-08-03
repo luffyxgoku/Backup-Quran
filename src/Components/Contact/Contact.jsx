@@ -8,7 +8,10 @@ export default function Contact() {
     fullName: "",
     phone: "",
     message: "",
+    topic: "Appreciation",
+    rating: 0,
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const [status, setStatus] = useState("");
 
@@ -18,13 +21,19 @@ export default function Contact() {
   const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
   const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
+  const msgPlaceholderMap = {
+    Appreciation: "Glad you like the app. Share your thoughts.",
+    Problem: "Describe the issue you're facing.",
+    Suggestions: "Share your suggestions for improvement.",
+  };
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    setIsSubmitting(true);
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
         publicKey: PUBLIC_KEY,
@@ -36,12 +45,15 @@ export default function Contact() {
             phone: "",
             message: "",
           });
+          setIsSubmitting(false);
+
           setStatus("Message Sent Successfully");
           setTimeout(() => {
             setStatus("");
           }, 7000);
         },
         (error) => {
+          setIsSubmitting(false);
           setStatus("Message Failed");
           setTimeout(() => {
             setStatus("");
@@ -95,6 +107,24 @@ export default function Contact() {
           </div>
 
           <div className="form-group">
+            <label htmlFor="topic" className="form-label">
+              Select Topic
+            </label>
+            <select
+              name="topic"
+              id="topic"
+              value={formData.topic}
+              onChange={handleChange}
+              className="form-input"
+              required
+            >
+              <option value="Appreciation"> Appreciation</option>
+              <option value="Problem"> Problem</option>
+              <option value="Suggestions"> Suggestions</option>
+            </select>
+          </div>
+
+          <div className="form-group">
             <label htmlFor="message" className="form-label">
               Your Message
             </label>
@@ -103,15 +133,39 @@ export default function Contact() {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              placeholder="Write your message here..."
+              placeholder={
+                msgPlaceholderMap[formData.topic] ||
+                "Write your message here..."
+              }
               className="form-textarea"
               rows="4"
               required
             ></textarea>
           </div>
 
-          <button type="submit" className="form-submit-button">
-            Submit
+          <div className="form-group">
+            <label className="form-label-rating">Rating</label>
+            <div className="rating-stars">
+              {[1, 2, 3, 4, 5].map((star) => (
+                <span
+                  key={star}
+                  className={`star-icon ${
+                    star <= formData.rating ? "filled" : ""
+                  }`}
+                  onClick={() => setFormData({ ...formData, rating: star })}
+                >
+                  ★
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            className="form-submit-button"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? "Sending" : "Submit"}
           </button>
         </form>
       </div>

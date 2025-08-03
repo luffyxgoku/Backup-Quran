@@ -69,11 +69,11 @@ export default function SelectedChapter() {
               <p className="hadith-status">{hadith.status} Hadith</p>
             </div>
             <div className="hadith-ref-img-cont">
-              <img
+              {/* <img
                 src={ribbon}
                 alt="ribbon"
                 className={theme ? "share-img-dark" : "share-img"}
-              />
+              /> */}
               <img
                 src={copy}
                 alt="copy"

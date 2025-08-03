@@ -1,4 +1,3 @@
-// your imports
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -11,7 +10,7 @@ import copy from "../../assets/copy.png";
 import bismillah from "../../assets/bismillah.png";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import ribbon from "../../assets/ribbon.png";
+// import ribbon from "../../assets/ribbon.png";
 import close from "../../assets/close.png";
 import { useTheme } from "../../Context/ThemeContext";
 import "./Quran.css";
@@ -29,7 +28,6 @@ export default function SpecifChapter() {
   const { id } = useParams();
   const { chapterType } = useParams();
 
-  // audio player state
   const [audioFileSrc, setAudioFileSrc] = useState("");
 
   useEffect(() => {
@@ -80,6 +78,10 @@ export default function SpecifChapter() {
         arabic: arabicText,
         english: englishText,
         revaltionPlace: englishResponse.data.revaltionPlace,
+        verseMeta: arabicResponse.data.data.ayahs.map((ayah) => ({
+          surah: ayah.surah.number,
+          numberInSurah: ayah.numberInSurah,
+        })),
       });
 
       setQuranInfo({
@@ -232,13 +234,20 @@ export default function SpecifChapter() {
                             src={play}
                             alt="Play"
                             className={theme ? "share-img-dark" : "share-img"}
-                            onClick={() => playAudio(id, index + 1)}
+                            onClick={() => {
+                              const meta = quranChapter.verseMeta?.[index];
+                              if (meta) {
+                                playAudio(meta.surah, meta.numberInSurah);
+                              } else {
+                                playAudio(id, index + 1);
+                              }
+                            }}
                           />
-                          <img
+                          {/* <img
                             src={ribbon}
                             alt=""
                             className={theme ? "share-img-dark" : "share-img"}
-                          />
+                          /> */}
                           <img
                             src={copy}
                             alt="copy"

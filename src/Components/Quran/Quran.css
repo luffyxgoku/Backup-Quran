@@ -52,10 +52,10 @@
 .close-img {
   position: absolute;
   right: 1rem;
-  top: 0;
+  top: -0.5rem;
   z-index: 51;
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .audio-tag {
