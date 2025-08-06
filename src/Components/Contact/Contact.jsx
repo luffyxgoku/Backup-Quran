@@ -44,6 +44,8 @@ export default function Contact() {
             fullName: "",
             phone: "",
             message: "",
+            topic: "Appreciation",
+            rating: 0,
           });
           setIsSubmitting(false);
 
@@ -159,6 +161,14 @@ export default function Contact() {
               ))}
             </div>
           </div>
+
+          <input
+            type="hidden"
+            name="rating"
+            value={
+              "★".repeat(formData.rating) + "☆".repeat(5 - formData.rating)
+            }
+          />
 
           <button
             type="submit"
