@@ -2,8 +2,7 @@ import { useState } from "react";
 import send from "../../assets/aisendlight.png";
 import "./Assistant.css";
 import { GoogleGenAI } from "@google/genai";
-import ReactMarkdown from "react-markdown";
-import rehypeRaw from "rehype-raw";
+
 import { useTheme } from "../../Context/ThemeContext";
 import { useNavigate } from "react-router-dom";
 
@@ -15,6 +14,7 @@ export default function Assistant() {
     navigate("/");
   };
 
+  const [loading, setLoading] = useState(false);
   const [prompt, setPrompt] = useState("");
   const [messages, setMessages] = useState([]);
 
@@ -30,6 +30,7 @@ export default function Assistant() {
     if (!content.trim()) return;
     setPrompt("");
     setMessages((prev) => [...prev, { sender: "user", text: content }]);
+    setLoading(true);
 
     try {
       const response = await ai.models.generateContent({
@@ -42,7 +43,8 @@ export default function Assistant() {
         },
       });
 
-      setMessages((prev) => [...prev, { sender: "ai", text: response.text }]);
+      const cleanText = response.text.replace(/[#_*~`>\\[\](){}\-+=|]/g, "");
+      setMessages((prev) => [...prev, { sender: "ai", text: cleanText }]);
     } catch (error) {
       console.error("Something went wrong", error);
       setMessages((prev) => [
@@ -52,6 +54,8 @@ export default function Assistant() {
           text: "❌ Sorry, I couldn't fetch a response right now.",
         },
       ]);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -85,9 +89,7 @@ export default function Assistant() {
               msg.sender === "ai" ? "ai-message" : "user-message"
             }`}
           >
-            <ReactMarkdown rehypePlugins={[rehypeRaw]}>
-              {msg.text}
-            </ReactMarkdown>
+            {msg.text}
           </div>
         ))}
 
@@ -97,7 +99,9 @@ export default function Assistant() {
               className="chat-textarea"
               value={prompt}
               onChange={handleInputChange}
-              placeholder="Ask anything..."
+              placeholder={
+                loading ? "⏳ Thinking... please wait." : "Ask anything..."
+              }
             />
             <button type="submit" className="send-btn">
               <img
