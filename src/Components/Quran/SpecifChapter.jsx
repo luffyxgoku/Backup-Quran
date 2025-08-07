@@ -270,6 +270,7 @@ export default function SpecifChapter() {
                             </span>
                           )}
                           {restOfVerse && ` ${restOfVerse}`}
+                          <span className="verse-no">{index + 1}</span>
                         </p>
                       </div>
                       <div className="english-verse-container">
