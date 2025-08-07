@@ -228,7 +228,12 @@ export default function SpecifChapter() {
                   return (
                     <div key={index} className="verse-container">
                       <div className="verse-util">
-                        <p className="number">{index + 1}</p>
+                        <p className="number">
+                          {juzNames.includes(chapterType)
+                            ? index + 1
+                            : `${id} : ${index + 1}`}
+                        </p>
+
                         <div className="share-container">
                           <img
                             src={play}
